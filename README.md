@@ -1,2 +1,2 @@
 # UAM_PCB
-PCB files for underwater acoustic modem project. PCB files made using KiCad. PCB stackup: SIG-GND-GND-SIG
+PCB files for ECE 494/495 final year capstone project: Underwater Acoustic Modem (UAM). PCB files made using KiCad. PCB stackup: SIG-GND-GND-SIG
