@@ -1,0 +1,294 @@
+(footprint "SC-59_Handsoldering"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SC-59, hand-soldering varaint, https://lib.chipdip.ru/images/import_diod/original/SOT-23_SC-59.jpg")
+	(tags "SC-59 hand-soldering")
+	(property "Reference" "REF**"
+		(at 0 2.3 180)
+		(layer "F.SilkS")
+		(uuid "a576b668-d599-4fb9-a4a4-54fae69d111c")
+		(effects
+			(font
+				(size 1.016 1)
+				(thickness 0.154)
+			)
+		)
+	)
+	(property "Value" "1SS396,LF"
+		(at 0 2.5 180)
+		(layer "F.Fab")
+		(uuid "6152b9c9-7480-4229-a046-f8cd44e3c229")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Package_TO_SOT_SMD:SC-59_Handsoldering"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc3068a7-253e-47f3-bde2-1a503eb7ce47")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "291560c2-a705-4164-9e1d-da625034a965")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Dual Schottky diode, anode/cathode/center"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "79ad7f02-a91f-4b23-ac65-8e044e0470e6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Irms" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ad0e2124-b786-4db3-ba08-a1b935357216")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Tolerance" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cec80dbb-84ce-4fb8-b91f-1539dbb32a1f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Voltage" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3e30fc95-04d0-47f5-b727-5326b9f8886f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.91 -1.65)
+		(end 0.95 -1.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0f57d750-5c31-43af-8218-2a4ff8652833")
+	)
+	(fp_line
+		(start -0.85 1.65)
+		(end 0.95 1.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "74221c10-8966-4a65-b460-600e445e3b8c")
+	)
+	(fp_line
+		(start 0.95 -1.65)
+		(end 0.95 -0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c6c2722c-8534-454d-acdb-f5a8a569d522")
+	)
+	(fp_line
+		(start 0.95 1.65)
+		(end 0.95 0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3cf687b2-a7a7-4dc9-bb98-3c5e3d712645")
+	)
+	(fp_poly
+		(pts
+			(xy -1.36 -1.611676) (xy -1.12 -1.941676) (xy -1.6 -1.941676) (xy -1.36 -1.611676)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "0809c1d0-e686-4222-a511-2504bb15a1a3")
+	)
+	(fp_line
+		(start -2.8 -1.8)
+		(end -2.8 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ffa44589-a284-471e-9b7a-a3151420c7bf")
+	)
+	(fp_line
+		(start -2.8 -1.8)
+		(end 2.8 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a1b2dfd3-2bc9-42b9-a097-da5849c6bf3e")
+	)
+	(fp_line
+		(start 2.8 1.8)
+		(end -2.8 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "81c94c18-5528-484e-86bb-9e9c6e77f3d6")
+	)
+	(fp_line
+		(start 2.8 1.8)
+		(end 2.8 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e5d74fdc-2110-444f-baca-c5fcdd3e7800")
+	)
+	(fp_line
+		(start -0.85 1.55)
+		(end -0.85 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "27f24f20-0601-4398-a8e5-002ace116e68")
+	)
+	(fp_line
+		(start -0.85 1.55)
+		(end 0.85 1.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9d099589-a329-4b28-942f-5dc9b3eca72f")
+	)
+	(fp_line
+		(start -0.3 -1.55)
+		(end -0.85 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "df9ef3b5-7831-41d3-b167-01561512cebd")
+	)
+	(fp_line
+		(start -0.3 -1.55)
+		(end 0.85 -1.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "828f6671-c4d9-42ee-8d92-e376c06701d2")
+	)
+	(fp_line
+		(start 0.85 -1.52)
+		(end 0.85 1.52)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0940ecc8-fb0a-47f3-85be-2cb881504842")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 -90)
+		(layer "F.Fab")
+		(uuid "2508ecef-be35-46c3-ab29-bab95dd1ee83")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.154)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.65 -0.95)
+		(size 1.8 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "b3b30a22-aaee-4162-9c37-6ff3bc916487")
+	)
+	(pad "2" smd roundrect
+		(at -1.65 0.95)
+		(size 1.8 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "5c1e6368-323e-463e-b23d-076c9b878c5f")
+	)
+	(pad "3" smd roundrect
+		(at 1.65 0)
+		(size 1.8 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "6ad7b5fe-e9ec-4de9-85de-55f1d0eae71f")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SC-59.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
