@@ -1,5 +1,5 @@
 # OpenAquatix Hardware
-PCB files the open-source underwater acoustic modem OpenAquatix
+PCB files for the open-source underwater acoustic modem: OpenAquatix.
 
 Version 2 is currently under development and will feature:
 - Dramatically lower power consumption
