@@ -69,16 +69,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -89,9 +92,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
@@ -103,10 +108,13 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -119,6 +127,7 @@
         "min_clearance": 0.15,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
@@ -136,10 +145,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -227,6 +237,7 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -421,10 +432,15 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -437,9 +453,15 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -450,8 +472,8 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "UAM.kicad_pro",
-    "version": 1
+    "filename": "OpenAquatix-Hardware.kicad_pro",
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -466,6 +488,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.15,
         "via_diameter": 0.5,
@@ -474,7 +497,7 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -602,17 +625,54 @@
           "group_by": false,
           "label": "MPN",
           "name": "MPN",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Field-1",
           "name": "Field-1",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC PN",
+          "name": "LCSC PN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -647,6 +707,7 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -662,48 +723,48 @@
       "Root"
     ],
     [
-      "b0cb7639-0f0f-4eec-92de-6e811ccc5d77",
+      "67bcbde9-6c97-47b5-a943-9c89dd561e29",
       "STM32"
     ],
     [
-      "714b6701-17fb-4d22-824c-f3557392c27a",
+      "97752577-c8ef-422c-95cc-ec03c4f42fc3",
       "DC-DC"
     ],
     [
-      "b37090bc-1947-44c7-a711-65546c42de6c",
+      "0766ad09-d624-4487-92bd-10697a6e5161",
       "Connections"
     ],
     [
-      "c4b33b7f-8928-423d-807c-e13bd5563fe9",
-      "Power management"
-    ],
-    [
-      "c99f3fcf-4aa2-443e-8bd1-bf4fc926d49f",
-      "Impedance matching"
-    ],
-    [
-      "cd85e6a3-0172-4e2e-8232-e591ec98a8df",
-      "LPF"
-    ],
-    [
-      "e22359ae-fe09-435e-9308-a5cd46eb664e",
-      "PGA"
-    ],
-    [
-      "30d91366-7dbe-466f-bc2b-3e2ef7333ef8",
+      "5074ca12-860e-4c01-96a8-5067af9bad96",
       "Power Amplifier"
     ],
     [
-      "9a0382a1-6d14-46c3-ad82-20f72134d7bd",
-      "Pre-amplifier"
+      "e3d10b67-3ea3-4b35-bb17-fd2a95fd3492",
+      "Power Management"
     ],
     [
-      "261add59-8345-4e7d-9262-e41f795252d2",
-      "TR switch"
-    ],
-    [
-      "7a9fb0a4-e76b-4d27-a68d-a4a5d98556a9",
+      "627345a8-f8fa-4ddf-833c-ec36dc3744ae",
       "Feedback"
+    ],
+    [
+      "d1e5e321-dbf2-444c-b7f7-a6008d07a844",
+      "Pre-Amplifier"
+    ],
+    [
+      "890d2ccc-0ee1-44af-a69f-0d759033bbe5",
+      "Impedance Matching"
+    ],
+    [
+      "c5dd5559-9cf7-46d8-ab6d-3b0b40c73d2c",
+      "LPF"
+    ],
+    [
+      "df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b",
+      "PGA"
+    ],
+    [
+      "fb9c5bf4-ce8e-4e79-bb83-62ffc4865bf7",
+      "TR Switch"
     ]
   ],
   "text_variables": {}

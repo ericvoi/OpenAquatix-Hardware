@@ -3920,7 +3920,7 @@
 	)
 	(text "Tolerance of these components does not significantly impact power factor"
 		(exclude_from_sim no)
-		(at 90.932 136.906 0)
+		(at 89.154 132.588 0)
 		(effects
 			(font
 				(size 1.27 1.27)

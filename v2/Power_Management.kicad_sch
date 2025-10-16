@@ -1,18 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
-	(uuid "6c354ad9-bda4-4d93-ab27-70ed2a103f01")
-	(paper "A5")
-	(title_block
-		(title "EV")
-		(date "2025-01-17")
-		(rev "1.3")
-		(company "Power Monitoring")
-	)
+	(generator_version "9.0")
+	(uuid "74d61208-2ed2-4bc0-9439-a092021cea6a")
+	(paper "A4")
 	(lib_symbols
 		(symbol "UAM_symbols:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -85,7 +81,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -97,7 +93,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -146,6 +142,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "UAM_symbols:INA219AxDCN"
 			(exclude_from_sim no)
@@ -263,24 +260,6 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at 0 10.16 270)
 					(length 2.54)
 					(name "VS"
@@ -298,17 +277,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 10.16 2.54 180)
+				(pin power_in line
+					(at 0 -10.16 90)
 					(length 2.54)
-					(name "SCL"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -335,16 +314,16 @@
 					)
 				)
 				(pin input line
-					(at 10.16 -5.08 180)
+					(at 10.16 2.54 180)
 					(length 2.54)
-					(name "A0"
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -370,12 +349,35 @@
 						)
 					)
 				)
+				(pin input line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "UAM_symbols:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -443,10 +445,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -467,7 +481,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -479,22 +493,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -540,9 +542,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "UAM_symbols:R_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -613,18 +618,6 @@
 			(symbol "R_US_0_1"
 				(polyline
 					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
@@ -637,7 +630,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -661,7 +654,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -710,12 +715,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3VA"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -787,7 +797,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -799,7 +809,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -830,12 +840,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -907,7 +922,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -919,7 +934,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -950,12 +965,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+BATT"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1027,7 +1047,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1039,7 +1059,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1070,12 +1090,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1166,221 +1191,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-	)
-	(junction
-		(at 30.48 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6afa08e9-1044-47c2-8f7f-ea2ae1fb4674")
-	)
-	(junction
-		(at 46.99 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a929c184-251a-4aa2-b9f7-8da737de7b20")
-	)
-	(junction
-		(at 63.5 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b3a5c32d-b0ae-480a-bc38-0c44af47c2a4")
-	)
-	(junction
-		(at 46.99 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e1b8963f-49ea-46cd-a68a-94852f019d31")
-	)
-	(junction
-		(at 76.2 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ef7c3a8f-404f-4784-9a98-0f8192c6e187")
-	)
-	(wire
-		(pts
-			(xy 76.2 73.66) (xy 76.2 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "029d4f33-5bce-44fc-9462-c0332b5dbb15")
-	)
-	(wire
-		(pts
-			(xy 30.48 64.77) (xy 35.56 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06c9a3f4-ae62-4e0b-9baa-48c6b3da3561")
-	)
-	(wire
-		(pts
-			(xy 46.99 72.39) (xy 53.34 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f780a7e-c1be-4608-beba-bf3e401df6a0")
-	)
-	(wire
-		(pts
-			(xy 73.66 71.12) (xy 76.2 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a7e55c9-4216-40fe-9058-aff39599db3d")
-	)
-	(wire
-		(pts
-			(xy 46.99 64.77) (xy 53.34 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b274975-520c-4f0d-b008-fcfd2b12dca9")
-	)
-	(wire
-		(pts
-			(xy 163.83 54.61) (xy 163.83 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e9b342c-b3cc-4959-a1ea-073147609910")
-	)
-	(wire
-		(pts
-			(xy 53.34 66.04) (xy 53.34 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21d6a1ac-a8e7-46e4-92ec-8246cda2ee9a")
-	)
-	(wire
-		(pts
-			(xy 53.34 72.39) (xy 53.34 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39b8af73-bc31-4365-855b-ca237fb9d433")
-	)
-	(wire
-		(pts
-			(xy 73.66 73.66) (xy 76.2 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49925abe-df61-4325-8ae3-ae8e077af016")
-	)
-	(wire
-		(pts
-			(xy 179.07 54.61) (xy 179.07 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8733b7e7-d6dc-41ff-a234-760e3a92f849")
-	)
-	(wire
-		(pts
-			(xy 134.62 54.61) (xy 134.62 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d490d5a-7d0f-4a1a-99da-d397eca3e002")
-	)
-	(wire
-		(pts
-			(xy 63.5 57.15) (xy 63.5 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9957336e-06a4-4d9a-9fbf-23a6fb3be65f")
-	)
-	(wire
-		(pts
-			(xy 149.86 54.61) (xy 149.86 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b988f9ff-da0b-4ccf-98b7-a270dc76d538")
-	)
-	(wire
-		(pts
-			(xy 63.5 55.88) (xy 63.5 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf244a70-0ec4-43cf-bcec-d6780f2e141b")
-	)
-	(wire
-		(pts
-			(xy 76.2 71.12) (xy 76.2 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecdd34d8-1690-420d-80c0-5218484c7952")
-	)
-	(wire
-		(pts
-			(xy 30.48 72.39) (xy 35.56 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef609cfe-f064-49eb-9fa9-53670e03d20c")
-	)
-	(wire
-		(pts
-			(xy 43.18 72.39) (xy 46.99 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9436c33-2347-4148-ab7e-8c3371c5ec22")
-	)
-	(wire
-		(pts
-			(xy 43.18 64.77) (xy 46.99 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb3dffb3-7f77-447d-bcc8-6d4c3c592022")
 	)
 	(rectangle
-		(start 120.65 24.13)
-		(end 191.77 95.25)
+		(start 162.56 50.8)
+		(end 233.68 121.92)
 		(stroke
 			(width 0)
 			(type default)
@@ -1388,11 +1204,11 @@
 		(fill
 			(type none)
 		)
-		(uuid 5f8f09ea-4fde-4c40-aa39-757f74f78562)
+		(uuid 63c9ee9f-e27d-4ea0-90b1-e0212ef34c6d)
 	)
 	(rectangle
-		(start 20.32 24.13)
-		(end 105.41 95.25)
+		(start 62.23 50.8)
+		(end 147.32 121.92)
 		(stroke
 			(width 0)
 			(type default)
@@ -1400,88 +1216,450 @@
 		(fill
 			(type none)
 		)
-		(uuid fb3fa306-b1e7-477e-bf04-91c6e386a228)
+		(uuid 9c5c77b8-ef72-47ec-bc56-2cb07a983a39)
 	)
-	(text "Power Consumption"
+	(text "3mA"
 		(exclude_from_sim no)
-		(at 49.53 29.21 0)
-		(effects
-			(font
-				(size 1.905 1.905)
-			)
-			(justify left)
-		)
-		(uuid "05575ebc-8bde-49e9-8bcc-3ac07850d1a2")
-	)
-	(text "I2C ADDR: 1000000"
-		(exclude_from_sim no)
-		(at 85.09 64.516 0)
+		(at 189.23 64.516 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "317f3bfa-85f3-49fa-9c71-4455bf0ab235")
+		(uuid "024f3d22-5c40-4cb7-af59-cb08b1c481a4")
+	)
+	(text "3mA"
+		(exclude_from_sim no)
+		(at 175.006 64.516 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0df893b9-9064-40db-902c-c219c312972b")
+	)
+	(text "2.6 mW"
+		(exclude_from_sim no)
+		(at 167.386 74.168 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "205bf8c1-9b86-4d69-bfcb-c64207c5c7d6")
 	)
 	(text "Address select pins tied to GND\nwith no option to change this as\nthe I2C interface is not broken\nout outside of the PCB and this\nis the only I2C device"
 		(exclude_from_sim no)
-		(at 71.628 87.122 0)
+		(at 113.538 113.792 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "4e0c2327-6ace-4be9-b7c5-deb46f3232dc")
-	)
-	(text "Voltage and current sense IC used to detect\nthe amount of power used by all of the\nelectronics. Not strictly necessary for any\ndesign requirements, but useful for debugging\nissues and for testing future implementations\nin low power applications."
-		(exclude_from_sim no)
-		(at 43.942 37.592 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6e1eac90-86fc-4bc7-94ec-dc9a81e7aacb")
-	)
-	(text "LPF to get only the DC component \nof current. This can be used to \nestimate power consumption.\nfc = 1.59 kHz"
-		(exclude_from_sim no)
-		(at 20.574 52.832 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9e865933-f532-4260-9dac-683ea3711d8a")
+		(uuid "29a500b0-9396-499a-ba4d-e6400ac4c51d")
 	)
 	(text "The current sense resistor is \nthe same as the one used in the \npower supply for the power \namplifier buck converter for BOM \nconsolidation. The INA219 has\nprogrammable gain which makes it\nflexible across different current\nloads."
 		(exclude_from_sim no)
-		(at 21.844 83.566 0)
+		(at 63.754 110.236 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "b9078dfc-9879-418d-8b11-db17b5bf038d")
+		(uuid "4dd63f00-a933-4624-a1c9-5bc1cc610bbd")
 	)
-	(text "Power Good Indicators"
+	(text "3mA"
 		(exclude_from_sim no)
-		(at 140.208 30.734 0)
+		(at 218.694 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "503f9d5f-a155-499c-b071-d6dd2869ed90")
+	)
+	(text "I2C ADDR: 1000000"
+		(exclude_from_sim no)
+		(at 127 91.186 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "601ab5d1-82c8-4163-b000-db74dce8f423")
+	)
+	(text "If LEDs too bright, replace with 1k/20k resistors"
+		(exclude_from_sim no)
+		(at 198.374 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "60eee817-f19d-4522-a3d6-8e13f67a6b4a")
+	)
+	(text "LPF to get only the DC component \nof current. This can be used to \nestimate power consumption.\nfc = 1.59 kHz"
+		(exclude_from_sim no)
+		(at 62.484 79.502 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "687fa7f9-1304-4483-8be9-2b2bf2458c8d")
+	)
+	(text "2mA at 24V"
+		(exclude_from_sim no)
+		(at 200.406 64.516 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7073b2c5-00b3-414e-a93f-534c7eb97316")
+	)
+	(text "48 mW"
+		(exclude_from_sim no)
+		(at 198.374 73.914 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "74504b72-71de-4c28-acde-1390eb9b4d16")
+	)
+	(text "90 mW"
+		(exclude_from_sim no)
+		(at 212.852 74.168 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7735f9c3-17c2-4fbe-8b01-e01080927825")
+	)
+	(text "Power Consumption"
+		(exclude_from_sim no)
+		(at 91.44 55.88 0)
 		(effects
 			(font
 				(size 1.905 1.905)
 			)
 			(justify left)
 		)
-		(uuid "d1260a42-0408-49c8-952d-93958f4c28d3")
+		(uuid "b47c6f23-5f44-4542-adbb-fedb7d8039dc")
+	)
+	(text "Potentially leave this power good indicator off\nand save a constant 90 mW"
+		(exclude_from_sim no)
+		(at 228.092 80.518 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "da3adfce-a3d1-4a3b-901e-671e9b3a0ac5")
+	)
+	(text "2.6 mW"
+		(exclude_from_sim no)
+		(at 183.388 73.914 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e1e86e6c-4552-4608-8528-45da3696cf06")
+	)
+	(text "INA219 has software power down mode."
+		(exclude_from_sim no)
+		(at 107.442 73.914 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f0247122-8d63-4759-9611-01f36f96afe7")
+	)
+	(text "Power Good Indicators"
+		(exclude_from_sim no)
+		(at 182.118 57.404 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+			(justify left)
+		)
+		(uuid "f4e784ad-b31f-41c6-b75a-cd5e28372900")
+	)
+	(text "Voltage and current sense IC used to detect\nthe amount of power used by all of the\nelectronics. Not strictly necessary for any\ndesign requirements, but useful for debugging\nissues and for testing future implementations\nin low power applications."
+		(exclude_from_sim no)
+		(at 85.852 64.262 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f91f8b15-a965-4fb2-ac5b-a8c957e47a1a")
+	)
+	(junction
+		(at 72.39 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c3da9fe-e601-4971-9746-f9a2bd514c0a")
+	)
+	(junction
+		(at 118.11 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7eced64e-2006-43ca-aceb-6b14b95c2bd6")
+	)
+	(junction
+		(at 88.9 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f21e8c7-568b-4bdd-afc2-465cb45f213f")
+	)
+	(junction
+		(at 88.9 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e52f79bc-b318-4a56-98c0-30a61811ca76")
+	)
+	(junction
+		(at 105.41 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f54ff505-a883-4a72-965a-06b85fd8bef8")
+	)
+	(wire
+		(pts
+			(xy 95.25 99.06) (xy 95.25 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "156e12ed-c754-460d-ba78-a83345d233f7")
+	)
+	(wire
+		(pts
+			(xy 118.11 100.33) (xy 118.11 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17978ae1-798b-4347-885f-bc063aab3b18")
+	)
+	(wire
+		(pts
+			(xy 95.25 92.71) (xy 95.25 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "250177b1-84b8-448b-9395-546644c70134")
+	)
+	(wire
+		(pts
+			(xy 205.74 81.28) (xy 205.74 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3540d6de-c22c-497f-801f-574829407f9d")
+	)
+	(wire
+		(pts
+			(xy 88.9 99.06) (xy 95.25 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d06c8b5-65c6-447b-912f-e93d9257a36d")
+	)
+	(wire
+		(pts
+			(xy 72.39 99.06) (xy 77.47 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71493429-b5ae-4717-98a1-1591fde89f2b")
+	)
+	(wire
+		(pts
+			(xy 118.11 97.79) (xy 118.11 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "736329e3-cb38-44e6-9d5f-2b03873a813b")
+	)
+	(wire
+		(pts
+			(xy 115.57 97.79) (xy 118.11 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7380172e-2e2b-407e-b486-9b485be7c989")
+	)
+	(wire
+		(pts
+			(xy 191.77 81.28) (xy 191.77 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c7df8df-9d60-4d05-a60f-e761ab1cde37")
+	)
+	(wire
+		(pts
+			(xy 85.09 99.06) (xy 88.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "931b7dd6-e30d-4185-867a-70e5db6d6a68")
+	)
+	(wire
+		(pts
+			(xy 115.57 100.33) (xy 118.11 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4b3a91f-c223-4ad5-ac2b-7aa8bb778210")
+	)
+	(wire
+		(pts
+			(xy 176.53 81.28) (xy 176.53 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8c7e824-489f-4163-a732-71261fcc2041")
+	)
+	(wire
+		(pts
+			(xy 72.39 91.44) (xy 77.47 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c31e825d-5f86-4b89-bc4e-23c82b8457e2")
+	)
+	(wire
+		(pts
+			(xy 220.98 76.2) (xy 220.98 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca17572c-5e9b-401d-80de-3b1206dcc606")
+	)
+	(wire
+		(pts
+			(xy 105.41 83.82) (xy 105.41 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf62e70a-ac44-44de-b96b-6107aa66b442")
+	)
+	(wire
+		(pts
+			(xy 220.98 83.82) (xy 220.98 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d244be6d-7994-45a5-bf3c-ee72d364a507")
+	)
+	(wire
+		(pts
+			(xy 85.09 91.44) (xy 88.9 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8ff60f0-58e4-4b75-92c6-1c92ae1d721d")
+	)
+	(wire
+		(pts
+			(xy 105.41 82.55) (xy 105.41 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea99044b-a5a9-49b8-be94-2c6a6ac7b53f")
+	)
+	(wire
+		(pts
+			(xy 88.9 91.44) (xy 95.25 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec617ae6-d6ea-4e5f-9fa1-3e5837689c50")
+	)
+	(global_label "+30V"
+		(shape input)
+		(at 220.98 73.66 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf18c022-873f-489e-b339-e62703cce75b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.98 65.5948 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "I2C_SCL"
 		(shape input)
-		(at 73.66 66.04 0)
+		(at 115.57 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1489,53 +1667,9 @@
 			)
 			(justify left)
 		)
-		(uuid "393c584b-f2cb-4ccd-98dd-ff3e957ddcb0")
+		(uuid "c8ece428-e0ca-449f-8b90-b12583ac91e9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.2047 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "+26V"
-		(shape input)
-		(at 179.07 46.99 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4d088995-5c9a-48e9-940f-f2d012fc72ef")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 179.07 38.9248 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "I2C_SDA"
-		(shape input)
-		(at 73.66 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a91fcb04-f807-4782-b35d-de8a62b25027")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.2652 63.5 0)
+			(at 126.1147 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1547,7 +1681,7 @@
 	)
 	(global_label "+BATTa"
 		(shape input)
-		(at 30.48 64.77 180)
+		(at 72.39 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1555,9 +1689,9 @@
 			)
 			(justify right)
 		)
-		(uuid "feab11bb-46eb-4332-b5ee-22765d6d6d94")
+		(uuid "ec148531-d986-49ef-bce8-6de4d2eea045")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 20.4796 64.77 0)
+			(at 62.3896 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1567,106 +1701,31 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "UAM_symbols:R_US")
-		(at 30.48 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(global_label "I2C_SDA"
+		(shape input)
+		(at 115.57 90.17 0)
 		(fields_autoplaced yes)
-		(uuid "015f08d0-6866-4d97-9b0f-6f40b8e15a48")
-		(property "Reference" "R17"
-			(at 33.02 67.3099 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fc3cf1dd-a681-4df6-be6c-b374acae758d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 126.1752 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(property "Value" "10m"
-			(at 33.02 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 31.496 68.834 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 30.48 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Irms" ""
-			(at 30.48 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 30.48 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 30.48 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ceb3576d-895f-4413-9048-eee9f88afec6")
-		)
-		(pin "2"
-			(uuid "b54db80e-90c6-41f2-8717-2975406e89d0")
-		)
-		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "R17")
-					(unit 1)
-				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 134.62 46.99 0)
+		(at 176.53 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1674,8 +1733,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0753e40a-80a6-4cbf-bf54-627958b05246")
-		(property "Reference" "#PWR049"
-			(at 134.62 50.8 0)
+		(property "Reference" "#PWR0111"
+			(at 176.53 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1684,7 +1743,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 134.62 41.91 0)
+			(at 176.53 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1692,7 +1751,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 46.99 0)
+			(at 176.53 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,7 +1760,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 46.99 0)
+			(at 176.53 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1710,7 +1769,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 134.62 46.99 0)
+			(at 176.53 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1722,9 +1781,415 @@
 			(uuid "c85db9e1-5397-483d-a7fa-5767f85782ec")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR049")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UAM_symbols:R_US")
+		(at 72.39 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09452463-3dc5-4b2f-ba93-077fb4a0ae29")
+		(property "Reference" "R55"
+			(at 74.93 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10m"
+			(at 74.93 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 73.406 95.504 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 72.39 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Irms" ""
+			(at 72.39 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 72.39 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 72.39 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13004790-ecc9-4b9b-896b-2746b573a478")
+		)
+		(pin "2"
+			(uuid "f1095544-c1b8-47d1-90b6-f58701701ece")
+		)
+		(instances
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UAM_symbols:C")
+		(at 88.9 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f435eee-cb35-48bd-96cc-6e3de2dfe7ad")
+		(property "Reference" "C87"
+			(at 92.71 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 92.71 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 89.8652 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Irms" ""
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca7e2093-a150-4dec-a4e7-8a5915f69356")
+		)
+		(pin "2"
+			(uuid "a252ad17-c7c5-4bda-9177-25d95627b25b")
+		)
+		(instances
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "C87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UAM_symbols:R_US")
+		(at 176.53 77.47 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26708eef-acc0-4cbd-8293-7c337aaa30c6")
+		(property "Reference" "R58"
+			(at 179.07 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "470R"
+			(at 179.07 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 175.514 77.216 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 176.53 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Irms" ""
+			(at 176.53 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 176.53 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 176.53 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ff215292-3870-435a-9d2b-424a348918be")
+		)
+		(pin "1"
+			(uuid "dead6350-1781-404d-a101-d84620a5d68b")
+		)
+		(instances
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UAM_symbols:INA219AxDCN")
+		(at 105.41 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "340f44dd-2e2b-4606-9ded-4067e17fcad6")
+		(property "Reference" "U13"
+			(at 107.6041 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "INA219AIDCNR"
+			(at 107.6041 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-8"
+			(at 121.92 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina219.pdf"
+			(at 114.3 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zero-Drift, Bidirectional Current/Power Monitor (0-26V) With I2C Interface, SOT-23-8"
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Irms" ""
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 105.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "cdfb0924-0313-4b49-bc89-6dd8aa8c0743")
+		)
+		(pin "7"
+			(uuid "cf1331f2-6fe4-489a-b2ab-4f416f8e586b")
+		)
+		(pin "2"
+			(uuid "942fd170-eb5c-4b33-a34e-904e787c91b6")
+		)
+		(pin "3"
+			(uuid "1d55bcc1-1b3b-47d2-9915-507537049a7b")
+		)
+		(pin "1"
+			(uuid "a43b9dcb-0dcc-4872-aa6e-f6d7f4adf257")
+		)
+		(pin "4"
+			(uuid "a35015c6-9f52-41b5-a57f-a630795bffd0")
+		)
+		(pin "8"
+			(uuid "a94abe11-c293-4b26-a3ae-0e06a0e0d351")
+		)
+		(pin "5"
+			(uuid "3a61c9bf-8951-47b0-992d-46bb4c3a83a4")
+		)
+		(instances
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -1732,7 +2197,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 67.31 0)
+		(at 205.74 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1740,8 +2205,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34981daa-a841-42af-8aeb-e9e45030c8e0")
-		(property "Reference" "#PWR056"
-			(at 163.83 73.66 0)
+		(property "Reference" "#PWR0116"
+			(at 205.74 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1750,7 +2215,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 163.83 72.39 0)
+			(at 205.74 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1758,7 +2223,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 67.31 0)
+			(at 205.74 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1767,7 +2232,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 67.31 0)
+			(at 205.74 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1776,7 +2241,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 67.31 0)
+			(at 205.74 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1788,9 +2253,9 @@
 			(uuid "346dfddc-e647-4831-8e7d-f5b281da01f3")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR056")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -1798,32 +2263,34 @@
 	)
 	(symbol
 		(lib_id "UAM_symbols:R_US")
-		(at 39.37 64.77 90)
+		(at 205.74 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "37dbd25e-c7dd-4f66-b26f-22e5bab13677")
-		(property "Reference" "R12"
-			(at 39.37 58.42 90)
+		(uuid "37cda299-c461-488d-9447-53d9b029c383")
+		(property "Reference" "R60"
+			(at 208.28 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "100R"
-			(at 39.37 60.96 90)
+		(property "Value" "10k"
+			(at 208.28 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 39.624 63.754 90)
+			(at 206.756 77.724 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1832,7 +2299,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 64.77 0)
+			(at 205.74 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1841,7 +2308,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 39.37 64.77 0)
+			(at 205.74 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1850,7 +2317,7 @@
 			)
 		)
 		(property "Irms" ""
-			(at 39.37 64.77 0)
+			(at 205.74 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1859,7 +2326,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 39.37 64.77 0)
+			(at 205.74 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1868,7 +2335,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 39.37 64.77 0)
+			(at 205.74 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1877,120 +2344,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "b7975862-b400-40d4-8349-cedabb487900")
+			(uuid "4151246f-0d50-4590-8e5b-e16a66387eda")
 		)
 		(pin "1"
-			(uuid "05d13473-cae0-4ec4-9fc4-fee0fbaf5018")
+			(uuid "6e2e2cec-dd81-45b9-b073-aab29e10a304")
 		)
 		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UAM_symbols:R_US")
-		(at 134.62 50.8 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "386197bd-0d83-4f3f-9bb4-f964119405e1")
-		(property "Reference" "R13"
-			(at 137.16 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2k"
-			(at 137.16 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 133.604 50.546 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 134.62 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Irms" ""
-			(at 134.62 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 134.62 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 134.62 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 134.62 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c68188fa-5022-4296-91cd-a409c15b9407")
-		)
-		(pin "1"
-			(uuid "9b45e2b9-1ea3-49df-bc64-ac0c8881f966")
-		)
-		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "R13")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -1998,7 +2360,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 163.83 46.99 0)
+		(at 205.74 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2006,8 +2368,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f54948c-2b43-4373-bf83-10cc2e966689")
-		(property "Reference" "#PWR055"
-			(at 163.83 50.8 0)
+		(property "Reference" "#PWR0115"
+			(at 205.74 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2016,7 +2378,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 163.83 41.91 0)
+			(at 205.74 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,7 +2386,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 46.99 0)
+			(at 205.74 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2033,7 +2395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 46.99 0)
+			(at 205.74 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2042,7 +2404,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 163.83 46.99 0)
+			(at 205.74 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2054,9 +2416,9 @@
 			(uuid "2e49ce68-7dc6-4fb2-9344-b4b5847b5188")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR055")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -2064,7 +2426,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 134.62 67.31 0)
+		(at 176.53 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2072,8 +2434,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f2763a6-8d6a-4d55-b1b1-7c26b19c191c")
-		(property "Reference" "#PWR050"
-			(at 134.62 73.66 0)
+		(property "Reference" "#PWR0112"
+			(at 176.53 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2082,7 +2444,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 134.62 72.39 0)
+			(at 176.53 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2090,7 +2452,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 67.31 0)
+			(at 176.53 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2099,7 +2461,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 67.31 0)
+			(at 176.53 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2108,7 +2470,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 67.31 0)
+			(at 176.53 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2120,9 +2482,9 @@
 			(uuid "a66295c4-15dc-4263-9768-fd6d879a2ece")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR050")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -2130,7 +2492,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 67.31 0)
+		(at 191.77 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2138,8 +2500,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fdab132-ac84-4938-b795-ca451de0e9c4")
-		(property "Reference" "#PWR054"
-			(at 149.86 73.66 0)
+		(property "Reference" "#PWR0114"
+			(at 191.77 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2148,7 +2510,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 72.39 0)
+			(at 191.77 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2156,7 +2518,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 67.31 0)
+			(at 191.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2165,7 +2527,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 67.31 0)
+			(at 191.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2174,7 +2536,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 67.31 0)
+			(at 191.77 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2186,9 +2548,295 @@
 			(uuid "32582e58-d849-4026-8b4a-9b2e580f33f4")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR054")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UAM_symbols:R_US")
+		(at 220.98 80.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "56bcce06-be92-4e9c-a8aa-486b44d5b89e")
+		(property "Reference" "R61"
+			(at 223.52 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 223.52 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 219.964 79.756 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 220.98 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Irms" ""
+			(at 220.98 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 220.98 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 220.98 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "106073b4-a39f-470b-8f16-efb52970c42f")
+		)
+		(pin "1"
+			(uuid "9129352d-2d7d-49ea-a2d0-6d6d7b24415b")
+		)
+		(instances
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "R61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UAM_symbols:R_US")
+		(at 81.28 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57ef3eed-5f51-4eb2-b059-2dd3d182ccaa")
+		(property "Reference" "R57"
+			(at 81.28 94.742 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 81.28 96.774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 81.534 98.044 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 81.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Irms" ""
+			(at 81.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 81.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 81.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ec88be6e-f2bc-42e1-a1d5-fa5c6b6c06e2")
+		)
+		(pin "1"
+			(uuid "7ba7fbde-098f-41d5-8e55-c527a8f01cb1")
+		)
+		(instances
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UAM_symbols:R_US")
+		(at 81.28 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "604e13d5-febe-41e4-8c70-a04a772f2c9d")
+		(property "Reference" "R56"
+			(at 81.28 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 81.28 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 81.534 90.424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 81.28 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Irms" ""
+			(at 81.28 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 81.28 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" ""
+			(at 81.28 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c2217050-b822-4ea6-92f8-32e6c8f7f70c")
+		)
+		(pin "1"
+			(uuid "3db4c47c-6c09-4a6c-a290-6e564372d463")
+		)
+		(instances
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -2196,7 +2844,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3VA")
-		(at 149.86 46.99 0)
+		(at 191.77 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2204,8 +2852,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b775fc6-0f0c-4e33-925f-5506725d16dd")
-		(property "Reference" "#PWR053"
-			(at 149.86 50.8 0)
+		(property "Reference" "#PWR0113"
+			(at 191.77 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2214,7 +2862,7 @@
 			)
 		)
 		(property "Value" "+3.3VA"
-			(at 149.86 41.91 0)
+			(at 191.77 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2222,7 +2870,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 46.99 0)
+			(at 191.77 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2231,7 +2879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 46.99 0)
+			(at 191.77 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2240,7 +2888,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 149.86 46.99 0)
+			(at 191.77 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2252,124 +2900,9 @@
 			(uuid "d822679d-f279-46d4-a0f4-bf302a864d00")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UAM_symbols:INA219AxDCN")
-		(at 63.5 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7512863c-4806-47a7-943a-ec4757211797")
-		(property "Reference" "U7"
-			(at 65.6941 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "INA219AIDCNR"
-			(at 65.6941 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-8"
-			(at 80.01 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina219.pdf"
-			(at 72.39 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zero-Drift, Bidirectional Current/Power Monitor (0-26V) With I2C Interface, SOT-23-8"
-			(at 63.5 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Irms" ""
-			(at 63.5 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 63.5 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 63.5 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "517098af-2241-4852-8619-845be438befe")
-		)
-		(pin "7"
-			(uuid "94bfb2c7-7c6f-42df-b8a4-d96993d5a76b")
-		)
-		(pin "2"
-			(uuid "68441226-7ddf-40b0-be47-d02308c91a21")
-		)
-		(pin "3"
-			(uuid "00c5fc2e-cc50-41e6-977c-ecc8da9d2245")
-		)
-		(pin "1"
-			(uuid "d3db1434-f28b-4997-b3f8-cf282ab858c4")
-		)
-		(pin "4"
-			(uuid "1c93c185-27f0-451c-a5a9-0c6ff732a8aa")
-		)
-		(pin "8"
-			(uuid "1d8fbd6b-dbe3-427a-8a26-ccc60a3c9a2f")
-		)
-		(pin "5"
-			(uuid "d9c90edf-63c7-4ef5-8f97-9da77fa836ad")
-		)
-		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "U7")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -2377,16 +2910,16 @@
 	)
 	(symbol
 		(lib_id "UAM_symbols:R_US")
-		(at 179.07 50.8 180)
+		(at 191.77 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7e85027e-006c-440d-a1db-892e0bef0be7")
-		(property "Reference" "R16"
-			(at 181.61 49.5299 0)
+		(uuid "6c8004c0-e327-4ea7-a1c8-7cf617704d4c")
+		(property "Reference" "R59"
+			(at 194.31 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2394,8 +2927,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "47k"
-			(at 181.61 52.0699 0)
+		(property "Value" "470R"
+			(at 194.31 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2404,7 +2937,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 178.054 50.546 90)
+			(at 190.754 77.216 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2413,7 +2946,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 50.8 0)
+			(at 191.77 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,7 +2955,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 179.07 50.8 0)
+			(at 191.77 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2431,7 +2964,7 @@
 			)
 		)
 		(property "Irms" ""
-			(at 179.07 50.8 0)
+			(at 191.77 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2440,7 +2973,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 179.07 50.8 0)
+			(at 191.77 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2449,7 +2982,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 179.07 50.8 0)
+			(at 191.77 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2457,24 +2990,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 179.07 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
-			(uuid "3e9ab89e-f6f1-499b-a9d5-cbd13bb4afb8")
+			(uuid "20b959a6-6f15-4d35-a4f1-6f004d2fd56f")
 		)
 		(pin "1"
-			(uuid "5322c795-8b09-4fe0-b1de-b20e72f422c3")
+			(uuid "7b3148af-6a47-4728-85e2-0193be30bc03")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "R16")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -2482,7 +3007,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 55.88 57.15 270)
+		(at 97.79 83.82 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2490,8 +3015,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "804dca2b-0262-4406-bb3b-28baadacb94c")
-		(property "Reference" "#PWR071"
-			(at 49.53 57.15 0)
+		(property "Reference" "#PWR0107"
+			(at 91.44 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2500,7 +3025,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 52.07 57.1499 90)
+			(at 93.98 83.8199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2509,7 +3034,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 57.15 0)
+			(at 97.79 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,7 +3043,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 57.15 0)
+			(at 97.79 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2527,7 +3052,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 55.88 57.15 0)
+			(at 97.79 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2539,44 +3064,41 @@
 			(uuid "17578887-d48b-4c40-a49c-fe908bd32a9f")
 		)
 		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR071")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "UAM_symbols:R_US")
-		(at 149.86 50.8 180)
+		(lib_id "UAM_symbols:C")
+		(at 101.6 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99f34cd6-3d2e-4579-a6d5-0078cc8df2c8")
-		(property "Reference" "R14"
-			(at 152.4 49.5299 0)
+		(uuid "9ad209a1-fd02-43aa-869e-11e398a43f74")
+		(property "Reference" "C88"
+			(at 101.6 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "2k"
-			(at 152.4 52.0699 0)
+		(property "Value" "100n"
+			(at 101.6 80.518 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 148.844 50.546 90)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 105.41 82.8548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2585,7 +3107,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 50.8 0)
+			(at 101.6 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2593,8 +3115,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 149.86 50.8 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 101.6 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2603,7 +3125,7 @@
 			)
 		)
 		(property "Irms" ""
-			(at 149.86 50.8 0)
+			(at 101.6 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2612,7 +3134,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 149.86 50.8 0)
+			(at 101.6 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2621,7 +3143,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 149.86 50.8 0)
+			(at 101.6 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2629,24 +3151,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 149.86 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
-			(uuid "74caef28-b325-4743-90bd-b445cbb7c463")
+			(uuid "c71f1839-2514-4606-b3fe-27ea48b452f6")
 		)
 		(pin "1"
-			(uuid "5b92179e-2340-4dc4-b953-9c4d44bb4f92")
+			(uuid "321f95e9-21ec-4d90-9dbe-429bd28cd158")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "R14")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "C88")
 					(unit 1)
 				)
 			)
@@ -2654,7 +3168,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 63.5 55.88 0)
+		(at 105.41 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2662,8 +3176,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b5b73b3-ad63-475c-9fe7-023df0915948")
-		(property "Reference" "#PWR061"
-			(at 63.5 59.69 0)
+		(property "Reference" "#PWR0108"
+			(at 105.41 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2672,7 +3186,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 63.5 50.8 0)
+			(at 105.41 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2680,7 +3194,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 55.88 0)
+			(at 105.41 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2689,7 +3203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 55.88 0)
+			(at 105.41 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2698,7 +3212,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 63.5 55.88 0)
+			(at 105.41 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2710,9 +3224,9 @@
 			(uuid "edc72140-bd60-47af-9c13-7b95ed70c1ca")
 		)
 		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR061")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -2720,7 +3234,7 @@
 	)
 	(symbol
 		(lib_id "UAM_symbols:LED")
-		(at 134.62 63.5 90)
+		(at 176.53 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2728,8 +3242,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3b64ff8-0fee-4da9-b1bd-63125a417472")
-		(property "Reference" "D3"
-			(at 138.43 63.8174 90)
+		(property "Reference" "D4"
+			(at 180.34 90.4874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2738,7 +3252,7 @@
 			)
 		)
 		(property "Value" "Red"
-			(at 138.43 66.3574 90)
+			(at 180.34 93.0274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2747,7 +3261,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 134.62 63.5 0)
+			(at 176.53 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2756,7 +3270,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 63.5 0)
+			(at 176.53 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2765,7 +3279,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 134.62 63.5 0)
+			(at 176.53 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2774,7 +3288,7 @@
 			)
 		)
 		(property "Irms" ""
-			(at 134.62 63.5 0)
+			(at 176.53 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2783,7 +3297,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 134.62 63.5 0)
+			(at 176.53 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2792,7 +3306,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 134.62 63.5 0)
+			(at 176.53 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2807,9 +3321,9 @@
 			(uuid "9dba089b-c160-4be0-99b1-14d360fca208")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "D3")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -2817,7 +3331,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 78.74 0)
+		(at 105.41 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2825,8 +3339,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8244913-d466-4da8-8aee-ccb3eecf6d0c")
-		(property "Reference" "#PWR060"
-			(at 63.5 85.09 0)
+		(property "Reference" "#PWR0109"
+			(at 105.41 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2835,7 +3349,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 83.82 0)
+			(at 105.41 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2843,7 +3357,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 78.74 0)
+			(at 105.41 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2852,7 +3366,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 78.74 0)
+			(at 105.41 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2861,7 +3375,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 78.74 0)
+			(at 105.41 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2873,103 +3387,9 @@
 			(uuid "7da02b30-cbe3-4c53-b7b7-33e606ee643f")
 		)
 		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UAM_symbols:C")
-		(at 59.69 57.15 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a88a5fbd-0faf-46a5-aede-77ad3e18accd")
-		(property "Reference" "C45"
-			(at 59.69 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 59.69 53.848 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 63.5 56.1848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 59.69 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 59.69 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Irms" ""
-			(at 59.69 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 59.69 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 59.69 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "676cba47-c011-4e77-a33b-ce272db4df15")
-		)
-		(pin "1"
-			(uuid "78ccc223-a925-4b42-96c9-a50b10ad43b3")
-		)
-		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "C45")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -2977,7 +3397,7 @@
 	)
 	(symbol
 		(lib_id "UAM_symbols:LED")
-		(at 149.86 63.5 90)
+		(at 191.77 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2985,8 +3405,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba96df95-69ab-48aa-8962-c7324876ba85")
-		(property "Reference" "D4"
-			(at 153.67 63.8174 90)
+		(property "Reference" "D5"
+			(at 195.58 90.4874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2995,7 +3415,7 @@
 			)
 		)
 		(property "Value" "Red"
-			(at 153.67 66.3574 90)
+			(at 195.58 93.0274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3004,7 +3424,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 149.86 63.5 0)
+			(at 191.77 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,7 +3433,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 63.5 0)
+			(at 191.77 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,7 +3442,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 149.86 63.5 0)
+			(at 191.77 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3031,7 +3451,7 @@
 			)
 		)
 		(property "Irms" ""
-			(at 149.86 63.5 0)
+			(at 191.77 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3040,7 +3460,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 149.86 63.5 0)
+			(at 191.77 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3049,7 +3469,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 149.86 63.5 0)
+			(at 191.77 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3064,305 +3484,9 @@
 			(uuid "c6cc1677-6b52-4cc4-8e73-483e1e736ebd")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UAM_symbols:R_US")
-		(at 39.37 72.39 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c0488ab0-1295-4a2b-a467-14d4e1b39170")
-		(property "Reference" "R21"
-			(at 39.37 68.072 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 39.37 70.104 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 39.624 71.374 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 39.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Irms" ""
-			(at 39.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 39.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 39.37 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b7975862-b400-40d4-8349-cedabb487901")
-		)
-		(pin "1"
-			(uuid "05d13473-cae0-4ec4-9fc4-fee0fbaf5019")
-		)
-		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UAM_symbols:C")
-		(at 46.99 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c133eb82-3713-495e-8c33-e5b997ef7c37")
-		(property "Reference" "C44"
-			(at 50.8 67.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 50.8 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 47.9552 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 46.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Irms" ""
-			(at 46.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 46.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 46.99 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a31b208-8f33-4d65-aaf5-f4db8c6decf3")
-		)
-		(pin "2"
-			(uuid "c6641f2a-2bf6-4da7-a997-0d4fd68e83dd")
-		)
-		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "C44")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UAM_symbols:R_US")
-		(at 163.83 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c345815b-37a0-4c5a-b97e-9248680e2c99")
-		(property "Reference" "R15"
-			(at 166.37 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47k"
-			(at 166.37 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 164.846 51.054 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Irms" ""
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" ""
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" ""
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 163.83 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "25cb1108-3124-46ae-849b-0eb1bf68e567")
-		)
-		(pin "1"
-			(uuid "596c9b2c-09a2-4ff6-a8b7-ff9aec8dc466")
-		)
-		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "R15")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -3370,7 +3494,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 76.2 74.93 0)
+		(at 118.11 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3378,8 +3502,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3933def-861c-4601-8f2b-774019147d99")
-		(property "Reference" "#PWR059"
-			(at 76.2 81.28 0)
+		(property "Reference" "#PWR0110"
+			(at 118.11 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3388,7 +3512,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 80.01 0)
+			(at 118.11 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3396,7 +3520,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 74.93 0)
+			(at 118.11 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3405,7 +3529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 74.93 0)
+			(at 118.11 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3414,7 +3538,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 74.93 0)
+			(at 118.11 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3426,9 +3550,9 @@
 			(uuid "d7b6005b-1f7e-4788-96c6-9961a7ccfbe2")
 		)
 		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR059")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -3436,7 +3560,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 179.07 67.31 0)
+		(at 220.98 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3444,8 +3568,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d42326fe-9fc4-49cb-bb03-0c51838bc38e")
-		(property "Reference" "#PWR057"
-			(at 179.07 73.66 0)
+		(property "Reference" "#PWR0117"
+			(at 220.98 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3454,7 +3578,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 179.07 72.39 0)
+			(at 220.98 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3462,7 +3586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 67.31 0)
+			(at 220.98 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3471,7 +3595,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 67.31 0)
+			(at 220.98 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3480,7 +3604,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 67.31 0)
+			(at 220.98 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3492,9 +3616,9 @@
 			(uuid "1270e51c-d550-4190-87ee-ca9346707491")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR057")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -3502,7 +3626,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 30.48 72.39 90)
+		(at 72.39 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3510,8 +3634,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8c31355-9459-4dbe-91a3-8866c2cc82d5")
-		(property "Reference" "#PWR052"
-			(at 34.29 72.39 0)
+		(property "Reference" "#PWR0106"
+			(at 76.2 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3520,7 +3644,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 26.67 72.3899 90)
+			(at 68.58 99.0599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3529,7 +3653,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 72.39 0)
+			(at 72.39 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3538,7 +3662,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 72.39 0)
+			(at 72.39 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3547,7 +3671,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 30.48 72.39 0)
+			(at 72.39 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3559,9 +3683,9 @@
 			(uuid "8eaddbf0-bb26-4b9b-a49a-008716abeb5f")
 		)
 		(instances
-			(project ""
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "#PWR052")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -3569,7 +3693,7 @@
 	)
 	(symbol
 		(lib_id "UAM_symbols:LED")
-		(at 179.07 63.5 90)
+		(at 220.98 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3577,8 +3701,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f02fcd26-351d-4682-a279-e7b735f662b2")
-		(property "Reference" "D6"
-			(at 182.88 63.8174 90)
+		(property "Reference" "D7"
+			(at 224.79 90.4874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3587,7 +3711,7 @@
 			)
 		)
 		(property "Value" "Red"
-			(at 182.88 66.3574 90)
+			(at 224.79 93.0274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3596,7 +3720,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 179.07 63.5 0)
+			(at 220.98 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3605,7 +3729,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 63.5 0)
+			(at 220.98 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3614,7 +3738,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 179.07 63.5 0)
+			(at 220.98 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3623,7 +3747,7 @@
 			)
 		)
 		(property "Irms" ""
-			(at 179.07 63.5 0)
+			(at 220.98 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3632,7 +3756,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 179.07 63.5 0)
+			(at 220.98 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3641,7 +3765,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 179.07 63.5 0)
+			(at 220.98 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3656,9 +3780,9 @@
 			(uuid "d6b978e3-47e3-4816-9d96-995e1582e500")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "D6")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -3666,7 +3790,7 @@
 	)
 	(symbol
 		(lib_id "UAM_symbols:LED")
-		(at 163.83 63.5 90)
+		(at 205.74 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3674,8 +3798,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa038690-7c2f-4266-b453-9c3927140855")
-		(property "Reference" "D5"
-			(at 167.64 63.8174 90)
+		(property "Reference" "D6"
+			(at 209.55 90.4874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3684,7 +3808,7 @@
 			)
 		)
 		(property "Value" "Red"
-			(at 167.64 66.3574 90)
+			(at 209.55 93.0274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,7 +3817,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 163.83 63.5 0)
+			(at 205.74 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3702,7 +3826,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 63.5 0)
+			(at 205.74 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3711,7 +3835,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 163.83 63.5 0)
+			(at 205.74 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3720,7 +3844,7 @@
 			)
 		)
 		(property "Irms" ""
-			(at 163.83 63.5 0)
+			(at 205.74 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3729,7 +3853,7 @@
 			)
 		)
 		(property "Tolerance" ""
-			(at 163.83 63.5 0)
+			(at 205.74 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3738,7 +3862,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 163.83 63.5 0)
+			(at 205.74 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3753,9 +3877,9 @@
 			(uuid "b8a0dcc6-603e-4321-a8f1-42f4d2a3d147")
 		)
 		(instances
-			(project "UAM"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/c4b33b7f-8928-423d-807c-e13bd5563fe9"
-					(reference "D5")
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/e3d10b67-3ea3-4b35-bb17-fd2a95fd3492"
+					(reference "D6")
 					(unit 1)
 				)
 			)
