@@ -1,3 +1,15 @@
+# License
+
+Copyright 2025 OpenAquatix Contributors
+
+This hardware design is licensed under the CERN-OHL-P v2.
+You may redistribute and modify this design under the terms of the
+CERN-OHL-P v2 (https://ohwr.org/cern_ohl_p_v2.txt).
+
+This design is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY,
+INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A
+PARTICULAR PURPOSE. See the CERN-OHL-P v2 for applicable conditions.
+
 # OpenAquatix Hardware
 PCB files for the open-source underwater acoustic modem: OpenAquatix.
 
