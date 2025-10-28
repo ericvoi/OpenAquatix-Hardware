@@ -10021,7 +10021,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "49cbb4b2-b176-43b6-a96f-70578cfe7102")
 		(property "Reference" "Q19"
 			(at 171.45 88.8999 0)
@@ -10081,11 +10080,12 @@
 			)
 		)
 		(property "MPN" "BSS138"
-			(at 165.1 90.17 0)
+			(at 165.1 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "3"

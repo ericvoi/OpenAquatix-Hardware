@@ -9108,6 +9108,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC PN" "C22440565"
@@ -14209,7 +14210,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 50.8 90)
+		(at 88.9 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14217,7 +14218,7 @@
 		(dnp no)
 		(uuid "aad41bba-a446-4e4c-9b65-2f7f4a62e808")
 		(property "Reference" "#PWR074"
-			(at 95.25 50.8 0)
+			(at 88.9 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14226,7 +14227,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.186 50.8 90)
+			(at 90.678 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
