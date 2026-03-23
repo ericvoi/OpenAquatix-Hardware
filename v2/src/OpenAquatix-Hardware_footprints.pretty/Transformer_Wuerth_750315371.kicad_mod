@@ -1,0 +1,294 @@
+(footprint "Transformer_Wuerth_750315371"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Power Transformer, horizontal core with bobbin, 6 pin, 2.54mm pitch, 11.24mm row spacing, 12.6x8.3x4.1mm")
+	(tags "transformer flyback")
+	(property "Reference" "REF**"
+		(at -5.5 -5.5 0)
+		(layer "F.SilkS")
+		(uuid "cc245a8a-9faa-40d9-b14f-cc5d03b6a3f0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Wuerth_760390012"
+		(at 0 5.2 0)
+		(layer "F.Fab")
+		(uuid "14e8a695-7ce8-442e-b1d7-fd390d6a65b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Transformer_SMD:Transformer_Wuerth_750315371"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fcc0bc1d-4921-41df-8e3b-a204e5616923")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/catalog/datasheet/750315371.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "063b0b92-e1c2-44f1-87c8-e27529a1a716")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "5V, 1A , 320 - 480kHz, 1:1.1, Center Tapped, SMD"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e40e6a08-95f5-46ca-a2ea-a3abacb721d2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Irms" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fb3baf10-11db-42c2-bf61-0381334ab199")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Tolerance" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ed0c38bb-a69b-4185-aaa4-758d8d4478a8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Voltage" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fc84099-b918-437e-9133-751e4c42b51d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4.625 -4.25)
+		(end 4.625 -4.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d06aa50c-112f-4510-a9c8-e2b3c8f20326")
+	)
+	(fp_line
+		(start 4.625 4.25)
+		(end -4.625 4.25)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ad076f08-2bae-4dd3-ad63-a1e94fafff9f")
+	)
+	(fp_poly
+		(pts
+			(xy -5.6 -3.35) (xy -5.84 -3.68) (xy -5.36 -3.68) (xy -5.6 -3.35)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "cc70709d-3eb5-438c-a52d-39a5a941704c")
+	)
+	(fp_line
+		(start -6.78 -4.4)
+		(end 6.78 -4.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3d38dac7-e614-4563-b956-8037dca79071")
+	)
+	(fp_line
+		(start -6.78 4.4)
+		(end -6.78 -4.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "73a751c3-4881-4e2f-8f9c-714e5be19dfc")
+	)
+	(fp_line
+		(start 6.78 -4.4)
+		(end 6.78 4.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "08118801-d089-4c13-813e-94eba3a1f480")
+	)
+	(fp_line
+		(start 6.78 4.4)
+		(end -6.78 4.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "67ed45c3-e391-4d95-86fe-e1090555457d")
+	)
+	(fp_line
+		(start -4.625 -3.1)
+		(end -3.63 -4.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9d6e4662-7a1c-46d5-a262-3083788ae771")
+	)
+	(fp_line
+		(start -4.625 4.15)
+		(end -4.625 -3.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "929131d0-9d46-4d08-b0ff-d84ac5312208")
+	)
+	(fp_line
+		(start -3.63 -4.15)
+		(end 4.625 -4.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0f99f33a-23f2-4030-8582-0d0ee1f9aa00")
+	)
+	(fp_line
+		(start 4.625 -4.15)
+		(end 4.625 4.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "db1b076d-a119-4c3a-8cd9-642230d73731")
+	)
+	(fp_line
+		(start 4.625 4.15)
+		(end -4.625 4.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c6d65308-371a-41b1-8256-4d152c1b4da8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0a14c77c-7f45-4ad6-9b31-95a16848f39d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -5.62 -2.54)
+		(size 1.83 1.09)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c3f9e4b1-ab34-46db-b5d0-294a3b9e810f")
+	)
+	(pad "2" smd roundrect
+		(at -5.62 0)
+		(size 1.83 1.09)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "afce6213-ee1e-4f90-8109-98f3e5c08d4b")
+	)
+	(pad "3" smd roundrect
+		(at -5.62 2.54)
+		(size 1.83 1.09)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "6b12d5c7-2c02-4570-85c2-f7056cbb20b5")
+	)
+	(pad "4" smd roundrect
+		(at 5.62 2.54)
+		(size 1.83 1.09)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "c87d26a0-f1e0-476c-881f-8afc1cf31958")
+	)
+	(pad "5" smd roundrect
+		(at 5.62 0)
+		(size 1.83 1.09)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "f878767e-0e28-4eff-8671-28575cad905c")
+	)
+	(pad "6" smd roundrect
+		(at 5.62 -2.54)
+		(size 1.83 1.09)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "4fee9d04-ab39-4f1b-aaf7-63d04944837e")
+	)
+	(model "${MODEL_DIR}/760390012.STEP"
+		(offset
+			(xyz 5 -3.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

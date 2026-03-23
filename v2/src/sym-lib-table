@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "UAM_symbols")(type "KiCad")(uri "${KIPRJMOD}/UAM_symbols.kicad_sym")(options "")(descr ""))
+)

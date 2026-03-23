@@ -1,0 +1,166 @@
+(footprint "EVP-AWED4A (3.00mm x 2.00mm)"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 1.8 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d9f911d8-4f9d-4df2-b7b0-f6c04b7f879b")
+		(effects
+			(font
+				(size 1.016 1)
+				(thickness 0.154)
+			)
+		)
+	)
+	(property "Value" "SW_Push"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "418760f0-0b2d-4256-b9b6-cbe599cfa7fe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Switches:EVP-AWED4A (3.00mm x 2.00mm)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bbd32d97-3318-41d5-8753-c2e134363b40")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3eb1e5ea-1c7f-4074-a4a2-0560231040fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Push button switch, generic, two pins"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ca49de70-cb56-43df-adc6-5c5eee38b07a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Irms" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "071cf26d-aea1-4153-ba0f-4f3d912341cd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Tolerance" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4cf0ec6f-f7c5-48dc-add1-f6bbfaf93097")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Voltage" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "599a851f-e2d0-4d5e-a135-f47220e3d9b2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.5 -1)
+		(end 1.5 -1)
+		(stroke
+			(width 0.16)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b5440a12-938e-4d0e-aef2-be5fe8fb83cc")
+	)
+	(fp_line
+		(start -1.5 1)
+		(end 1.5 1)
+		(stroke
+			(width 0.16)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "370c43aa-44d6-40fa-9753-a55642652267")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.4 0)
+		(stroke
+			(width 0.16)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "c0c80046-4c04-45f0-82c6-1eef1bcb1062")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1c839b2b-7bd7-4f39-947c-dc06d903dc2a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.154)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.625 0 90)
+		(size 1.5 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "737c1789-ecc7-42ac-af06-b79ca7435308")
+	)
+	(pad "2" smd rect
+		(at 1.625 0 180)
+		(size 0.55 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "e7669b10-9eb5-4417-a695-256d0ba6f929")
+	)
+)

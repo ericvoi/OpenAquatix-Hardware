@@ -1,0 +1,33 @@
+
+(footprint SMBJ (layer F.Cu) (tedit 68F08615)
+  (descr "<b>DO-214AA Modified J_BEND</b><p>Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppressor. Data Sheet")
+  (attr smd)
+  (fp_text reference REF** (at 1.27 -3.175 0) (layer F.SilkS)
+    (effects (font (size 1.0 1.0) (thickness 0.15)))
+  )
+  (fp_text value SMBJ (at 0.635 3.175 0) (layer F.Fab)
+    (effects (font (size 1.0 1.0) (thickness 0.15)))
+  )
+  (pad 1 smd rect (at -2.03 0.0) (size 1.78 2.16) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102))
+  (pad 2 smd rect (at 2.04 0.0) (size 1.78 2.16) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102))
+  (fp_line (start 2.24 -1.92) (end 2.24 1.92) (layer F.Fab) (width 0.1016))
+  (fp_line (start 2.24 1.92) (end -2.24 1.92) (layer F.SilkS) (width 0.1016))
+  (fp_line (start -2.24 1.92) (end -2.24 -1.92) (layer F.Fab) (width 0.1016))
+  (fp_line (start -2.24 -1.92) (end 2.24 -1.92) (layer F.SilkS) (width 0.1016))
+  (fp_poly
+    (pts
+      (xy -2.8 -1.1)
+      (xy -2.25 -1.1)
+      (xy -2.25 1.1)
+      (xy -2.8 1.1)
+    ) (layer F.Fab) (width 0.01)
+  )
+  (fp_poly
+    (pts
+      (xy 2.25 -1.1)
+      (xy 2.8 -1.1)
+      (xy 2.8 1.1)
+      (xy 2.25 1.1)
+    ) (layer F.Fab) (width 0.01)
+  )
+)

@@ -1,0 +1,28 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.5*%
+%TF.CreationDate,2025-11-04T12:08:14-07:00*%
+%TF.ProjectId,OpenAquatix-Hardware,4f70656e-4171-4756-9174-69782d486172,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 9.0.5) date 2025-11-04 12:08:14*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X149500000Y-99825000D02*
+G75*
+G02*
+X49500000Y-99825000I-50000000J0D01*
+G01*
+X49500000Y-99825000D02*
+G75*
+G02*
+X149500000Y-99825000I50000000J0D01*
+G01*
+M02*
