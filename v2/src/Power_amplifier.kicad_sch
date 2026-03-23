@@ -4012,30 +4012,6 @@
 		)
 	)
 	(rectangle
-		(start 245.11 43.18)
-		(end 271.78 88.9)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 9888eeb9-1903-4b70-8a1a-a41a61b8952d)
-	)
-	(rectangle
-		(start 15.24 88.9)
-		(end 119.38 157.48)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 9da84a46-07d6-4031-bb5d-32b1b7d7711b)
-	)
-	(rectangle
 		(start 92.71 163.068)
 		(end 142.24 174.498)
 		(stroke
@@ -4046,18 +4022,6 @@
 			(type none)
 		)
 		(uuid ce614d0a-096a-4758-a3c0-f3ad041d9b07)
-	)
-	(rectangle
-		(start 226.06 43.18)
-		(end 243.84 88.9)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid d09877e2-e246-4847-b2b5-73f776bc3dfe)
 	)
 	(text "LC Low Pass Filter"
 		(exclude_from_sim no)
@@ -4110,6 +4074,16 @@
 			)
 		)
 		(uuid "7bdb29d1-6b4a-46ee-a4e8-cbd1aa2b2001")
+	)
+	(text "Prefer X7R caps if possible for stability"
+		(exclude_from_sim no)
+		(at 242.316 89.916 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "820faaa5-e573-41c8-ac98-73a5004b979e")
 	)
 	(text "RC filters separate VDD \nand GVDD, as recommended\nin datasheet."
 		(exclude_from_sim no)
@@ -6911,7 +6885,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "023ed8b7-cc2f-43f2-b2eb-eb1a261bf3ba")
-		(property "Reference" "R74"
+		(property "Reference" "R62"
 			(at 139.7 102.616 90)
 			(effects
 				(font
@@ -6972,7 +6946,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R74")
+					(reference "R62")
 					(unit 1)
 				)
 			)
@@ -6987,7 +6961,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0342ed89-ef36-492d-962f-3856b0a28cfc")
-		(property "Reference" "C98"
+		(property "Reference" "C97"
 			(at 227.33 69.596 0)
 			(effects
 				(font
@@ -7056,7 +7030,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C98")
+					(reference "C97")
 					(unit 1)
 				)
 			)
@@ -7071,7 +7045,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04e73372-0725-4c46-90f4-6089bef0529d")
-		(property "Reference" "C82"
+		(property "Reference" "C81"
 			(at 128.27 86.106 90)
 			(effects
 				(font
@@ -7132,7 +7106,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C82")
+					(reference "C81")
 					(unit 1)
 				)
 			)
@@ -7148,7 +7122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "055aca82-4810-4fd9-9547-f2f8d845f1c2")
-		(property "Reference" "R66"
+		(property "Reference" "R54"
 			(at 42.164 62.23 90)
 			(effects
 				(font
@@ -7211,7 +7185,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R66")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -7226,7 +7200,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c529c7b-ba23-4523-b62b-d5a15754e427")
-		(property "Reference" "C87"
+		(property "Reference" "C86"
 			(at 140.97 83.82 90)
 			(effects
 				(font
@@ -7287,7 +7261,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C87")
+					(reference "C86")
 					(unit 1)
 				)
 			)
@@ -7303,7 +7277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0da72b20-a979-465f-840e-211974762c53")
-		(property "Reference" "#PWR0131"
+		(property "Reference" "#PWR0132"
 			(at 82.55 107.95 0)
 			(effects
 				(font
@@ -7353,7 +7327,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0131")
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -7368,7 +7342,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "108173a7-582b-47a1-97c2-cb471645233e")
-		(property "Reference" "C71"
+		(property "Reference" "C70"
 			(at 57.15 117.856 90)
 			(effects
 				(font
@@ -7429,7 +7403,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C71")
+					(reference "C70")
 					(unit 1)
 				)
 			)
@@ -7444,7 +7418,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "12b367f4-ac6b-4d4d-bcda-f5a6e2c27e46")
-		(property "Reference" "#PWR0145"
+		(property "Reference" "#PWR0148"
 			(at 242.57 72.39 0)
 			(effects
 				(font
@@ -7495,7 +7469,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0145")
+					(reference "#PWR0148")
 					(unit 1)
 				)
 			)
@@ -7510,7 +7484,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13a599fd-2e8c-47b1-bc65-9daea021683a")
-		(property "Reference" "#PWR0126"
+		(property "Reference" "#PWR0127"
 			(at 39.37 80.01 0)
 			(effects
 				(font
@@ -7560,7 +7534,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0126")
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -7575,7 +7549,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15d7df32-287f-4fd4-bc17-7cde238c1d0b")
-		(property "Reference" "R71"
+		(property "Reference" "R59"
 			(at 91.44 127.762 90)
 			(effects
 				(font
@@ -7636,7 +7610,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R71")
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -7652,7 +7626,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15ef831f-f404-4e04-a71f-b1b76c4ac630")
-		(property "Reference" "#PWR0137"
+		(property "Reference" "#PWR0139"
 			(at 114.3 52.07 0)
 			(effects
 				(font
@@ -7702,7 +7676,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0137")
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
@@ -7717,7 +7691,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "17f9355b-9a16-4c88-ac6a-731321003d4b")
-		(property "Reference" "C88"
+		(property "Reference" "C87"
 			(at 143.51 71.374 90)
 			(effects
 				(font
@@ -7778,7 +7752,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C88")
+					(reference "C87")
 					(unit 1)
 				)
 			)
@@ -7793,7 +7767,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "184108c7-34a9-458d-b72d-d304208d00ce")
-		(property "Reference" "#PWR0132"
+		(property "Reference" "#PWR0133"
 			(at 82.55 123.19 0)
 			(effects
 				(font
@@ -7843,7 +7817,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0132")
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
@@ -7858,7 +7832,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1a0fecbe-4746-4f36-a99a-da66fa981ad7")
-		(property "Reference" "C95"
+		(property "Reference" "C94"
 			(at 222.25 38.608 0)
 			(effects
 				(font
@@ -7919,7 +7893,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C95")
+					(reference "C94")
 					(unit 1)
 				)
 			)
@@ -7934,7 +7908,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1df38009-9eb9-4201-b15b-59500585506f")
-		(property "Reference" "C70"
+		(property "Reference" "C69"
 			(at 48.006 134.62 0)
 			(effects
 				(font
@@ -7997,7 +7971,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C70")
+					(reference "C69")
 					(unit 1)
 				)
 			)
@@ -8012,7 +7986,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "20616a0e-8b61-45b2-8053-23914a42f7bc")
-		(property "Reference" "C85"
+		(property "Reference" "C84"
 			(at 134.112 26.924 0)
 			(effects
 				(font
@@ -8073,7 +8047,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C85")
+					(reference "C84")
 					(unit 1)
 				)
 			)
@@ -8088,7 +8062,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23ea7f6c-24b3-4135-80ec-32c8d7e2c7ea")
-		(property "Reference" "C94"
+		(property "Reference" "C93"
 			(at 210.82 36.576 90)
 			(effects
 				(font
@@ -8149,7 +8123,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C94")
+					(reference "C93")
 					(unit 1)
 				)
 			)
@@ -8164,7 +8138,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "24349ef3-e6cf-415b-8f09-8c218c73468e")
-		(property "Reference" "#PWR0143"
+		(property "Reference" "#PWR0146"
 			(at 219.71 45.72 0)
 			(effects
 				(font
@@ -8214,7 +8188,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0143")
+					(reference "#PWR0146")
 					(unit 1)
 				)
 			)
@@ -8230,7 +8204,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "243b4318-2388-4871-82a6-dc0065d17c66")
-		(property "Reference" "R69"
+		(property "Reference" "R57"
 			(at 50.546 58.928 0)
 			(effects
 				(font
@@ -8293,7 +8267,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R69")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -8396,7 +8370,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2aeda209-8c3d-4af5-9ad5-09d9993febc3")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR0128"
 			(at 49.53 99.06 0)
 			(effects
 				(font
@@ -8446,7 +8420,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0127")
+					(reference "#PWR0128")
 					(unit 1)
 				)
 			)
@@ -8462,7 +8436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2dfec409-c1c0-4fc2-a183-2bb1e201ef06")
-		(property "Reference" "#PWR0140"
+		(property "Reference" "#PWR0142"
 			(at 128.27 156.21 0)
 			(effects
 				(font
@@ -8512,7 +8486,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0140")
+					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
@@ -8527,7 +8501,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e468081-796d-4953-b75a-181a627c1191")
-		(property "Reference" "#PWR0130"
+		(property "Reference" "#PWR0131"
 			(at 55.88 77.47 0)
 			(effects
 				(font
@@ -8577,7 +8551,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0130")
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -8593,7 +8567,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33e8470b-9d85-46bc-89c7-3a202361b631")
-		(property "Reference" "#PWR0129"
+		(property "Reference" "#PWR0130"
 			(at 53.34 144.78 0)
 			(effects
 				(font
@@ -8643,7 +8617,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0129")
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -8659,7 +8633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3603e4cc-b79b-4479-a74b-27875590e981")
-		(property "Reference" "R65"
+		(property "Reference" "R53"
 			(at 34.036 71.628 0)
 			(effects
 				(font
@@ -8722,7 +8696,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R65")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -8738,7 +8712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3943f3a2-625f-4fde-b265-3139b73840ce")
-		(property "Reference" "U17"
+		(property "Reference" "U20"
 			(at 175.26 24.13 0)
 			(effects
 				(font
@@ -8939,7 +8913,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "U17")
+					(reference "U20")
 					(unit 1)
 				)
 			)
@@ -8954,7 +8928,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3db705eb-124e-49bd-96b7-6a1b3f5e01ee")
-		(property "Reference" "C78"
+		(property "Reference" "C77"
 			(at 115.062 61.722 0)
 			(effects
 				(font
@@ -9017,7 +8991,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C78")
+					(reference "C77")
 					(unit 1)
 				)
 			)
@@ -9032,7 +9006,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "43840c8e-5081-4813-9361-0c0f40884eb1")
-		(property "Reference" "C83"
+		(property "Reference" "C82"
 			(at 125.476 26.924 0)
 			(effects
 				(font
@@ -9093,7 +9067,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C83")
+					(reference "C82")
 					(unit 1)
 				)
 			)
@@ -9108,7 +9082,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "47a7dde8-3ae1-4e23-9137-e1f94a8c8b38")
-		(property "Reference" "R73"
+		(property "Reference" "R61"
 			(at 119.38 60.706 90)
 			(effects
 				(font
@@ -9169,7 +9143,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R73")
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -9185,7 +9159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47ed65bf-b95d-42e5-8975-c48692192ca8")
-		(property "Reference" "#PWR0133"
+		(property "Reference" "#PWR0134"
 			(at 90.17 34.29 0)
 			(effects
 				(font
@@ -9235,7 +9209,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0133")
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -9250,7 +9224,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d5fdefe-4242-4967-b158-657c7ce96e9d")
-		(property "Reference" "C99"
+		(property "Reference" "C98"
 			(at 237.744 56.388 0)
 			(effects
 				(font
@@ -9319,7 +9293,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C99")
+					(reference "C98")
 					(unit 1)
 				)
 			)
@@ -9334,7 +9308,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52b828b3-e90c-4e04-bcd4-93ad81e4372f")
-		(property "Reference" "#PWR0146"
+		(property "Reference" "#PWR0149"
 			(at 250.19 72.39 0)
 			(effects
 				(font
@@ -9384,7 +9358,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0146")
+					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
@@ -9399,7 +9373,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "54959dab-de51-4f5c-9945-add1a343d989")
-		(property "Reference" "#PWR0135"
+		(property "Reference" "#PWR0136"
 			(at 96.52 146.05 0)
 			(effects
 				(font
@@ -9449,7 +9423,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0135")
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
@@ -9464,7 +9438,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "568719d2-519e-4228-bddd-5de40e5cb824")
-		(property "Reference" "C89"
+		(property "Reference" "C88"
 			(at 150.368 25.908 0)
 			(effects
 				(font
@@ -9534,7 +9508,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C89")
+					(reference "C88")
 					(unit 1)
 				)
 			)
@@ -9549,7 +9523,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5694624d-39c8-4d9d-9ceb-889837a05794")
-		(property "Reference" "C74"
+		(property "Reference" "C73"
 			(at 99.06 117.856 90)
 			(effects
 				(font
@@ -9610,7 +9584,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C74")
+					(reference "C73")
 					(unit 1)
 				)
 			)
@@ -9626,7 +9600,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5835ec43-01d0-4bfd-8189-08c59250ea62")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0138"
 			(at 109.22 17.78 0)
 			(effects
 				(font
@@ -9676,7 +9650,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0114")
+					(reference "#PWR0138")
 					(unit 1)
 				)
 			)
@@ -9691,7 +9665,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "59dca506-9861-488c-ae16-81209f1ff351")
-		(property "Reference" "#PWR0139"
+		(property "Reference" "#PWR0141"
 			(at 128.27 81.28 0)
 			(effects
 				(font
@@ -9742,7 +9716,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0139")
+					(reference "#PWR0141")
 					(unit 1)
 				)
 			)
@@ -9757,7 +9731,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a7b8dc5-f832-42b2-9189-a25a47c57c89")
-		(property "Reference" "R70"
+		(property "Reference" "R58"
 			(at 80.264 139.954 90)
 			(effects
 				(font
@@ -9818,7 +9792,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R70")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -9834,7 +9808,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a8f63fc-1c4e-42f5-8c72-60f64930b2b1")
-		(property "Reference" "Q10"
+		(property "Reference" "Q5"
 			(at 59.69 64.7699 0)
 			(effects
 				(font
@@ -9912,7 +9886,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "Q10")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -9927,7 +9901,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60ea218e-3bc1-4a32-a70f-9ae6c5f7a312")
-		(property "Reference" "C101"
+		(property "Reference" "C100"
 			(at 248.158 59.69 0)
 			(effects
 				(font
@@ -9988,7 +9962,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C101")
+					(reference "C100")
 					(unit 1)
 				)
 			)
@@ -10003,7 +9977,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "67cf08f5-4123-4c01-99e6-e9404a959c7d")
-		(property "Reference" "C100"
+		(property "Reference" "C99"
 			(at 237.744 71.628 0)
 			(effects
 				(font
@@ -10072,7 +10046,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C100")
+					(reference "C99")
 					(unit 1)
 				)
 			)
@@ -10087,7 +10061,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a09f0de-77ed-47b2-90ca-55523b5c06ef")
-		(property "Reference" "R67"
+		(property "Reference" "R55"
 			(at 48.26 128.016 90)
 			(effects
 				(font
@@ -10148,7 +10122,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R67")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -10164,7 +10138,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c961b92-a15d-40c0-8feb-c5a9aa6c741c")
-		(property "Reference" "R63"
+		(property "Reference" "R51"
 			(at 35.814 104.14 90)
 			(effects
 				(font
@@ -10227,7 +10201,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R63")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -10242,7 +10216,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ebdbfca-0550-4295-b5b1-eab240970da0")
-		(property "Reference" "C97"
+		(property "Reference" "C96"
 			(at 229.108 54.61 0)
 			(effects
 				(font
@@ -10311,7 +10285,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C97")
+					(reference "C96")
 					(unit 1)
 				)
 			)
@@ -10326,7 +10300,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "704ed248-142f-4273-80f2-218ba1c2445f")
-		(property "Reference" "C103"
+		(property "Reference" "C102"
 			(at 264.414 64.516 0)
 			(effects
 				(font
@@ -10387,7 +10361,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C103")
+					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -10402,7 +10376,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "734c29cd-27e0-4bfc-9269-c6a9544c04e4")
-		(property "Reference" "C102"
+		(property "Reference" "C101"
 			(at 248.412 72.39 0)
 			(effects
 				(font
@@ -10463,7 +10437,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C102")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -10478,7 +10452,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "73becde4-337a-48bd-995b-5fbc21dd003f")
-		(property "Reference" "C92"
+		(property "Reference" "C91"
 			(at 208.026 111.76 90)
 			(effects
 				(font
@@ -10539,7 +10513,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C92")
+					(reference "C91")
 					(unit 1)
 				)
 			)
@@ -10554,7 +10528,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "76350094-85f3-4b75-94be-a150cc0af825")
-		(property "Reference" "#PWR0142"
+		(property "Reference" "#PWR0145"
 			(at 214.63 121.92 0)
 			(effects
 				(font
@@ -10604,7 +10578,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0142")
+					(reference "#PWR0145")
 					(unit 1)
 				)
 			)
@@ -10619,7 +10593,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a7317ee-0ecb-496c-83d1-049eaeb8693e")
-		(property "Reference" "#PWR0138"
+		(property "Reference" "#PWR0140"
 			(at 124.46 78.74 0)
 			(effects
 				(font
@@ -10670,7 +10644,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0138")
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -10686,7 +10660,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7e4f9dfc-389f-4767-9d9a-1e700aef9df6")
-		(property "Reference" "R68"
+		(property "Reference" "R56"
 			(at 44.196 100.838 0)
 			(effects
 				(font
@@ -10749,7 +10723,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R68")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -10764,7 +10738,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8115d59d-5ae9-44ee-8b95-485eb578a892")
-		(property "Reference" "C93"
+		(property "Reference" "C92"
 			(at 209.55 94.996 90)
 			(effects
 				(font
@@ -10825,7 +10799,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C93")
+					(reference "C92")
 					(unit 1)
 				)
 			)
@@ -10841,7 +10815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8603338e-c19e-4b56-b277-50e38cdc0321")
-		(property "Reference" "#PWR0134"
+		(property "Reference" "#PWR0135"
 			(at 90.17 63.5 0)
 			(effects
 				(font
@@ -10891,7 +10865,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0134")
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
@@ -10906,7 +10880,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "971a2d30-392f-4678-b666-465b45307ffd")
-		(property "Reference" "#PWR0128"
+		(property "Reference" "#PWR0129"
 			(at 49.53 119.38 0)
 			(effects
 				(font
@@ -10956,7 +10930,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0128")
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -10972,7 +10946,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "97bda734-abe6-4822-a18f-544e7af23a59")
-		(property "Reference" "U16"
+		(property "Reference" "U19"
 			(at 106.68 124.46 0)
 			(effects
 				(font
@@ -11066,7 +11040,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "U16")
+					(reference "U19")
 					(unit 2)
 				)
 			)
@@ -11081,7 +11055,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d0c875c-8af5-4555-8104-64f41cb11aba")
-		(property "Reference" "R75"
+		(property "Reference" "R63"
 			(at 139.446 143.764 90)
 			(effects
 				(font
@@ -11142,7 +11116,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R75")
+					(reference "R63")
 					(unit 1)
 				)
 			)
@@ -11157,7 +11131,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a5e09be5-130b-43a5-8865-906a7f5d99eb")
-		(property "Reference" "C75"
+		(property "Reference" "C74"
 			(at 96.012 26.924 0)
 			(effects
 				(font
@@ -11218,7 +11192,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C75")
+					(reference "C74")
 					(unit 1)
 				)
 			)
@@ -11233,7 +11207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aaf8e83b-489b-41ec-bd39-6472d77fd3bb")
-		(property "Reference" "C72"
+		(property "Reference" "C71"
 			(at 69.596 109.474 0)
 			(effects
 				(font
@@ -11294,7 +11268,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C72")
+					(reference "C71")
 					(unit 1)
 				)
 			)
@@ -11309,7 +11283,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ab41deaa-e189-4b07-acbb-7897470fd21a")
-		(property "Reference" "C77"
+		(property "Reference" "C76"
 			(at 105.41 26.67 0)
 			(effects
 				(font
@@ -11370,7 +11344,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C77")
+					(reference "C76")
 					(unit 1)
 				)
 			)
@@ -11386,7 +11360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad6e7a42-895c-415c-852d-d6bef657b4b7")
-		(property "Reference" "Q9"
+		(property "Reference" "Q4"
 			(at 53.34 106.6799 0)
 			(effects
 				(font
@@ -11464,7 +11438,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "Q9")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -11479,7 +11453,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b7739271-631d-4967-addf-791cbf0a8021")
-		(property "Reference" "C73"
+		(property "Reference" "C72"
 			(at 91.186 134.62 0)
 			(effects
 				(font
@@ -11542,7 +11516,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C73")
+					(reference "C72")
 					(unit 1)
 				)
 			)
@@ -11557,7 +11531,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc28ede8-25a5-4422-8e55-973d7fa65f48")
-		(property "Reference" "C91"
+		(property "Reference" "C90"
 			(at 205.486 107.696 90)
 			(effects
 				(font
@@ -11626,7 +11600,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C91")
+					(reference "C90")
 					(unit 1)
 				)
 			)
@@ -11728,7 +11702,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c13ae3c5-ab19-4fe1-8413-283af7e1ef6e")
-		(property "Reference" "C79"
+		(property "Reference" "C78"
 			(at 120.904 26.924 0)
 			(effects
 				(font
@@ -11798,7 +11772,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C79")
+					(reference "C78")
 					(unit 1)
 				)
 			)
@@ -11813,7 +11787,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c706ac08-53aa-4528-8cac-32ffd1bf3fdf")
-		(property "Reference" "R77"
+		(property "Reference" "R65"
 			(at 258.064 81.788 0)
 			(effects
 				(font
@@ -11874,7 +11848,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R77")
+					(reference "R65")
 					(unit 1)
 				)
 			)
@@ -11889,7 +11863,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c8d47ad0-8e90-4db7-a873-0425892c0bb4")
-		(property "Reference" "R72"
+		(property "Reference" "R60"
 			(at 119.38 50.546 90)
 			(effects
 				(font
@@ -11950,7 +11924,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R72")
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -11965,7 +11939,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c9ac8d3d-5204-4926-8299-c2f976e474df")
-		(property "Reference" "C104"
+		(property "Reference" "C103"
 			(at 264.16 73.914 0)
 			(effects
 				(font
@@ -12026,7 +12000,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C104")
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -12041,7 +12015,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cb5a36b1-a9d5-4e99-a49b-592fb3e147f2")
-		(property "Reference" "C80"
+		(property "Reference" "C79"
 			(at 118.11 43.434 90)
 			(effects
 				(font
@@ -12104,7 +12078,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C80")
+					(reference "C79")
 					(unit 1)
 				)
 			)
@@ -12119,7 +12093,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d0dca143-a02c-47c2-93e7-a6e7a7b1214a")
-		(property "Reference" "C81"
+		(property "Reference" "C80"
 			(at 128.778 70.612 0)
 			(effects
 				(font
@@ -12182,7 +12156,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C81")
+					(reference "C80")
 					(unit 1)
 				)
 			)
@@ -12198,7 +12172,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1cfbf09-ad97-4b4c-bcc4-665172d14cfb")
-		(property "Reference" "#PWR0141"
+		(property "Reference" "#PWR0144"
 			(at 200.66 152.4 0)
 			(effects
 				(font
@@ -12248,7 +12222,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0141")
+					(reference "#PWR0144")
 					(unit 1)
 				)
 			)
@@ -12263,7 +12237,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d72e0876-b0c6-424b-8ae4-d257a4fe2037")
-		(property "Reference" "#PWR0144"
+		(property "Reference" "#PWR0147"
 			(at 223.52 109.22 0)
 			(effects
 				(font
@@ -12313,7 +12287,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0144")
+					(reference "#PWR0147")
 					(unit 1)
 				)
 			)
@@ -12328,7 +12302,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d973ddec-3a60-4304-bef6-4341025d39bc")
-		(property "Reference" "R62"
+		(property "Reference" "R50"
 			(at 31.242 101.854 0)
 			(effects
 				(font
@@ -12389,7 +12363,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R62")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -12404,7 +12378,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc83e2db-cc9a-4861-9373-a00a0ed5cb53")
-		(property "Reference" "C76"
+		(property "Reference" "C75"
 			(at 96.266 62.738 0)
 			(effects
 				(font
@@ -12473,7 +12447,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C76")
+					(reference "C75")
 					(unit 1)
 				)
 			)
@@ -12488,7 +12462,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e366cac3-c6ad-4b8a-8527-0d4bbbb7c9b9")
-		(property "Reference" "R76"
+		(property "Reference" "R64"
 			(at 264.414 54.102 0)
 			(effects
 				(font
@@ -12549,7 +12523,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R76")
+					(reference "R64")
 					(unit 1)
 				)
 			)
@@ -12564,7 +12538,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5ea00e0-ba00-4605-a310-852d8e8e20c5")
-		(property "Reference" "C90"
+		(property "Reference" "C89"
 			(at 204.47 31.75 90)
 			(effects
 				(font
@@ -12625,7 +12599,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C90")
+					(reference "C89")
 					(unit 1)
 				)
 			)
@@ -12640,7 +12614,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e608f8a3-bfe1-4a0d-8fe6-b90ca842239e")
-		(property "Reference" "C86"
+		(property "Reference" "C85"
 			(at 139.7 66.548 90)
 			(effects
 				(font
@@ -12701,7 +12675,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C86")
+					(reference "C85")
 					(unit 1)
 				)
 			)
@@ -12717,7 +12691,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8ec6a40-62fd-4a4a-887f-94e6f4d5e172")
-		(property "Reference" "U16"
+		(property "Reference" "U19"
 			(at 64.77 124.46 0)
 			(effects
 				(font
@@ -12779,39 +12753,39 @@
 			)
 		)
 		(pin "1"
-			(uuid "6d501ba3-9ad3-477c-9152-eeec57b9ff8b")
+			(uuid "6d501ba3-9ad3-477c-9152-eeec57b9ff8c")
 		)
 		(pin "6"
-			(uuid "83704e87-6ca8-43a2-8dcb-e5e172dd0b60")
+			(uuid "83704e87-6ca8-43a2-8dcb-e5e172dd0b61")
 		)
 		(pin "9"
-			(uuid "e19be27e-1a88-40c8-a06d-395f91ba860d")
+			(uuid "e19be27e-1a88-40c8-a06d-395f91ba860e")
 		)
 		(pin "3"
-			(uuid "d1cf605d-759a-4a2e-9075-721ccfe74c16")
+			(uuid "d1cf605d-759a-4a2e-9075-721ccfe74c17")
 		)
 		(pin "2"
-			(uuid "12b3564f-2d23-4e2b-b943-f30c376b9fef")
+			(uuid "12b3564f-2d23-4e2b-b943-f30c376b9ff0")
 		)
 		(pin "5"
-			(uuid "b7987cb6-aad5-4566-af0d-59681e3d3bdd")
+			(uuid "b7987cb6-aad5-4566-af0d-59681e3d3bde")
 		)
 		(pin "7"
-			(uuid "6b6e20e9-7cdf-4102-8c1f-ec51ab870f93")
+			(uuid "6b6e20e9-7cdf-4102-8c1f-ec51ab870f94")
 		)
 		(pin "8"
-			(uuid "4301c6c5-a4cd-4078-a958-d131ea0167b2")
+			(uuid "4301c6c5-a4cd-4078-a958-d131ea0167b3")
 		)
 		(pin "10"
-			(uuid "8b9d9c79-fabe-4df9-928d-2031999eea2d")
+			(uuid "8b9d9c79-fabe-4df9-928d-2031999eea2e")
 		)
 		(pin "4"
-			(uuid "03de4650-9717-4374-bfc5-bda7fdc53868")
+			(uuid "03de4650-9717-4374-bfc5-bda7fdc53869")
 		)
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "U16")
+					(reference "U19")
 					(unit 1)
 				)
 			)
@@ -12826,7 +12800,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e9e2777b-a601-44a9-b78d-d620cbdb0375")
-		(property "Reference" "R64"
+		(property "Reference" "R52"
 			(at 37.846 137.16 90)
 			(effects
 				(font
@@ -12887,7 +12861,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "R64")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -12902,7 +12876,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eeef350a-2cfd-4d16-9bd9-378f52c52fc2")
-		(property "Reference" "C84"
+		(property "Reference" "C83"
 			(at 135.89 127.508 90)
 			(effects
 				(font
@@ -12963,7 +12937,7 @@
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C84")
+					(reference "C83")
 					(unit 1)
 				)
 			)
@@ -12978,7 +12952,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1847d20-830d-4360-bd4d-a088a782aa0a")
-		(property "Reference" "C96"
+		(property "Reference" "C95"
 			(at 220.98 100.33 90)
 			(effects
 				(font
@@ -13039,7 +13013,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "C96")
+					(reference "C95")
 					(unit 1)
 				)
 			)
@@ -13055,7 +13029,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa1bf667-a41f-4966-9cc2-565874da61d6")
-		(property "Reference" "U16"
+		(property "Reference" "U19"
 			(at 88.392 109.728 0)
 			(effects
 				(font
@@ -13117,39 +13091,39 @@
 			)
 		)
 		(pin "1"
-			(uuid "6d501ba3-9ad3-477c-9152-eeec57b9ff8b")
+			(uuid "6d501ba3-9ad3-477c-9152-eeec57b9ff8d")
 		)
 		(pin "6"
-			(uuid "83704e87-6ca8-43a2-8dcb-e5e172dd0b60")
+			(uuid "83704e87-6ca8-43a2-8dcb-e5e172dd0b62")
 		)
 		(pin "9"
-			(uuid "e19be27e-1a88-40c8-a06d-395f91ba860d")
+			(uuid "e19be27e-1a88-40c8-a06d-395f91ba860f")
 		)
 		(pin "3"
-			(uuid "d1cf605d-759a-4a2e-9075-721ccfe74c16")
+			(uuid "d1cf605d-759a-4a2e-9075-721ccfe74c18")
 		)
 		(pin "2"
-			(uuid "12b3564f-2d23-4e2b-b943-f30c376b9fef")
+			(uuid "12b3564f-2d23-4e2b-b943-f30c376b9ff1")
 		)
 		(pin "5"
-			(uuid "b7987cb6-aad5-4566-af0d-59681e3d3bdd")
+			(uuid "b7987cb6-aad5-4566-af0d-59681e3d3bdf")
 		)
 		(pin "7"
-			(uuid "6b6e20e9-7cdf-4102-8c1f-ec51ab870f93")
+			(uuid "6b6e20e9-7cdf-4102-8c1f-ec51ab870f95")
 		)
 		(pin "8"
-			(uuid "4301c6c5-a4cd-4078-a958-d131ea0167b2")
+			(uuid "4301c6c5-a4cd-4078-a958-d131ea0167b4")
 		)
 		(pin "10"
-			(uuid "8b9d9c79-fabe-4df9-928d-2031999eea2d")
+			(uuid "8b9d9c79-fabe-4df9-928d-2031999eea2f")
 		)
 		(pin "4"
-			(uuid "03de4650-9717-4374-bfc5-bda7fdc53868")
+			(uuid "03de4650-9717-4374-bfc5-bda7fdc5386a")
 		)
 		(instances
 			(project ""
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "U16")
+					(reference "U19")
 					(unit 3)
 				)
 			)
@@ -13164,7 +13138,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "faaf7231-7a77-4911-a15d-c444f09c2611")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR0126"
 			(at 34.29 104.14 0)
 			(effects
 				(font
@@ -13214,7 +13188,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0125")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -13229,7 +13203,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc3886ee-a252-4e56-9b52-6dfcd700270c")
-		(property "Reference" "#PWR0136"
+		(property "Reference" "#PWR0137"
 			(at 105.41 74.93 0)
 			(effects
 				(font
@@ -13279,7 +13253,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0136")
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
@@ -13295,7 +13269,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff191698-c630-4bff-a3ea-12dcce584d2f")
-		(property "Reference" "#PWR0244"
+		(property "Reference" "#PWR0143"
 			(at 138.43 17.78 0)
 			(effects
 				(font
@@ -13345,7 +13319,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/5074ca12-860e-4c01-96a8-5067af9bad96"
-					(reference "#PWR0244")
+					(reference "#PWR0143")
 					(unit 1)
 				)
 			)

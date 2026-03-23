@@ -810,113 +810,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "UAM_symbols:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1081,12 +974,6 @@
 		(uuid "36ccbca8-ba5a-4c6b-b031-66e98d2c75d7")
 	)
 	(junction
-		(at 162.56 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "46a92ef6-5a84-46be-9347-c1bee26c9da8")
-	)
-	(junction
 		(at 105.41 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1097,12 +984,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75e7cf5e-c1c8-4fc8-9ee1-539c0b875913")
-	)
-	(junction
-		(at 74.93 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "795e454b-393b-4cf9-9c41-e7822686d081")
 	)
 	(junction
 		(at 97.79 55.88)
@@ -1229,16 +1110,6 @@
 			(type default)
 		)
 		(uuid "46b59aca-9595-463a-83fd-919026bc21c6")
-	)
-	(wire
-		(pts
-			(xy 162.56 67.31) (xy 173.99 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54515d8e-d577-49b5-affc-aaff991feb82")
 	)
 	(wire
 		(pts
@@ -1402,7 +1273,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 67.31) (xy 162.56 67.31)
+			(xy 148.59 67.31) (xy 173.99 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1579,81 +1450,6 @@
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
 					(reference "L8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UAM_symbols:TestPoint")
-		(at 74.93 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16796698-7140-4ee8-9f3e-ff145ae1525f")
-		(property "Reference" "TP14"
-			(at 77.47 62.7379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 77.47 65.2779 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 80.01 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 74.93 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 74.93 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bdb43543-d7ff-4131-bdf9-e8984459c7c0")
-		)
-		(instances
-			(project "OpenAquatix-Hardware"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
-					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -1845,7 +1641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b803277-ee01-4b89-80d8-41a05af7d8f6")
-		(property "Reference" "#PWR0199"
+		(property "Reference" "#PWR0202"
 			(at 116.84 92.71 0)
 			(effects
 				(font
@@ -1895,7 +1691,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
-					(reference "#PWR0199")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -1907,10 +1703,10 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp yes)
 		(uuid "71751b3d-8a64-4df3-9b8b-f15cf264e9d4")
-		(property "Reference" "C126"
+		(property "Reference" "C125"
 			(at 101.6 50.8 90)
 			(effects
 				(font
@@ -1953,6 +1749,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 101.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "58de737e-30be-4f2d-ae45-2b82bc857f47")
 		)
@@ -1962,7 +1766,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
-					(reference "C126")
+					(reference "C125")
 					(unit 1)
 				)
 			)
@@ -1974,11 +1778,11 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "737aa639-4255-4d35-b347-bea0755d37c8")
-		(property "Reference" "C127"
+		(property "Reference" "C126"
 			(at 101.6 59.69 90)
 			(effects
 				(font
@@ -2038,7 +1842,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
-					(reference "C127")
+					(reference "C126")
 					(unit 1)
 				)
 			)
@@ -2050,10 +1854,10 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp yes)
 		(uuid "9338f6b7-7e40-45ae-8c08-b4dbbbd42342")
-		(property "Reference" "C125"
+		(property "Reference" "C124"
 			(at 101.6 41.91 90)
 			(effects
 				(font
@@ -2096,6 +1900,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 101.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cbe4a0e3-be85-4fda-9897-c6ce688d9f66")
 		)
@@ -2105,74 +1917,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
-					(reference "C125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UAM_symbols:TestPoint")
-		(at 162.56 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9cdcbfd1-cc13-47fc-b11f-0ca3dc27972b")
-		(property "Reference" "TP15"
-			(at 165.1 62.7379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 165.1 65.2779 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 167.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 167.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 162.56 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8e3acd6-4bd2-47d6-bc19-ae0b69485bfb")
-		)
-		(instances
-			(project "OpenAquatix-Hardware"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
-					(reference "TP15")
+					(reference "C124")
 					(unit 1)
 				)
 			)
@@ -2188,7 +1933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be62fc11-f9ec-4fb4-b388-8b5ac39a5870")
-		(property "Reference" "C124"
+		(property "Reference" "C123"
 			(at 101.6 30.48 90)
 			(effects
 				(font
@@ -2257,7 +2002,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
-					(reference "C124")
+					(reference "C123")
 					(unit 1)
 				)
 			)
@@ -2367,7 +2112,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2666218-b920-482d-b969-8a2007f07f06")
-		(property "Reference" "#PWR0200"
+		(property "Reference" "#PWR0203"
 			(at 148.59 96.52 0)
 			(effects
 				(font
@@ -2417,7 +2162,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
-					(reference "#PWR0200")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -2429,11 +2174,11 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d07c063e-0253-43c7-9553-96a68a9bc5e1")
-		(property "Reference" "C128"
+		(property "Reference" "C127"
 			(at 113.03 74.9299 0)
 			(effects
 				(font
@@ -2478,6 +2223,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 109.22 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9196c74c-a854-4cb0-a0b3-cf928eb36383")
 		)
@@ -2487,7 +2240,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/890d2ccc-0ee1-44af-a69f-0d759033bbe5"
-					(reference "C128")
+					(reference "C127")
 					(unit 1)
 				)
 			)

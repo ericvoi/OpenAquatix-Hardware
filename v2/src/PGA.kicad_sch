@@ -966,113 +966,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "UAM_symbols:TestPoint_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint_Small"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_Small_0_1"
-				(circle
-					(center 0 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_Small_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 0)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -1550,18 +1443,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(rectangle
-		(start 12.7 24.13)
-		(end 63.5 81.28)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3a8ffeee-35b8-4f61-86ba-d7dafe0f4cbd)
-	)
 	(text "Coupling circuit with a \ncutoff frequency of 159 Hz"
 		(exclude_from_sim no)
 		(at 60.706 84.074 0)
@@ -1656,16 +1537,16 @@
 		(uuid "3ea6f827-9099-40d5-84f7-1c4dd8ea4723")
 	)
 	(junction
-		(at 81.28 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "672713b0-14a5-4c15-8e2b-6b8edc874500")
-	)
-	(junction
 		(at 96.52 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "68184269-779a-4af5-ab13-0ca3408ae683")
+	)
+	(junction
+		(at 162.56 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6dc6857d-37f6-487b-b597-d4fa3d86e893")
 	)
 	(junction
 		(at 50.8 44.45)
@@ -1899,7 +1780,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 72.39) (xy 144.78 72.39)
+			(xy 165.1 72.39) (xy 162.56 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1969,16 +1850,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 77.47) (xy 81.28 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d66ae8f-6f41-4fa6-8086-3cc3a4514846")
-	)
-	(wire
-		(pts
 			(xy 54.61 52.07) (xy 58.42 52.07)
 		)
 		(stroke
@@ -2029,16 +1900,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 74.93) (xy 81.28 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e41931e-21b0-4fc5-bdfe-2779b1817afb")
-	)
-	(wire
-		(pts
 			(xy 121.92 77.47) (xy 121.92 80.01)
 		)
 		(stroke
@@ -2069,6 +1930,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 72.39) (xy 144.78 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a847a453-9892-4241-b433-54c6a5ce7429")
+	)
+	(wire
+		(pts
 			(xy 58.42 58.42) (xy 54.61 58.42)
 		)
 		(stroke
@@ -2079,7 +1950,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 77.47) (xy 85.09 77.47)
+			(xy 77.47 77.47) (xy 85.09 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2189,7 +2060,7 @@
 	)
 	(global_label "PGA_CS#"
 		(shape input)
-		(at 147.32 72.39 0)
+		(at 165.1 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2199,7 +2070,7 @@
 		)
 		(uuid "41c39d18-f281-457e-b196-69f4309d9d8c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 158.6509 72.39 0)
+			(at 176.4309 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2231,7 +2102,7 @@
 			)
 		)
 	)
-	(global_label "SCK"
+	(global_label "PGA_SCK"
 		(shape input)
 		(at 147.32 67.31 0)
 		(fields_autoplaced yes)
@@ -2243,7 +2114,7 @@
 		)
 		(uuid "766a239a-1485-4c09-9af1-e21efb462eb8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.0547 67.31 0)
+			(at 158.6509 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2329,7 +2200,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "030cc256-a4c9-41aa-b5dc-30a5f4e1a7b2")
-		(property "Reference" "#PWR0236"
+		(property "Reference" "#PWR0239"
 			(at 134.62 88.9 0)
 			(effects
 				(font
@@ -2379,7 +2250,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0236")
+					(reference "#PWR0239")
 					(unit 1)
 				)
 			)
@@ -2395,7 +2266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14732114-eae7-4e28-b908-b43e12321ee0")
-		(property "Reference" "#PWR0224"
+		(property "Reference" "#PWR0227"
 			(at 26.67 77.47 0)
 			(effects
 				(font
@@ -2445,7 +2316,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0224")
+					(reference "#PWR0227")
 					(unit 1)
 				)
 			)
@@ -2460,7 +2331,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "169b8726-e9f4-4225-8e9c-d7b395060d9d")
-		(property "Reference" "#PWR0227"
+		(property "Reference" "#PWR0230"
 			(at 54.61 58.42 0)
 			(effects
 				(font
@@ -2510,7 +2381,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0227")
+					(reference "#PWR0230")
 					(unit 1)
 				)
 			)
@@ -2525,7 +2396,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "16a5911b-2123-43dc-9be7-4cfe4b4687f3")
-		(property "Reference" "#PWR0231"
+		(property "Reference" "#PWR0234"
 			(at 104.14 93.98 0)
 			(effects
 				(font
@@ -2575,7 +2446,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0231")
+					(reference "#PWR0234")
 					(unit 1)
 				)
 			)
@@ -2591,7 +2462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18c710fd-7ffa-4713-91e8-ecb3adf796fb")
-		(property "Reference" "#PWR0222"
+		(property "Reference" "#PWR0225"
 			(at 20.32 77.47 0)
 			(effects
 				(font
@@ -2641,7 +2512,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0222")
+					(reference "#PWR0225")
 					(unit 1)
 				)
 			)
@@ -2657,7 +2528,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2232bc53-82c0-4062-b3d8-c4ba2f178d68")
-		(property "Reference" "#PWR0225"
+		(property "Reference" "#PWR0228"
 			(at 44.45 48.26 0)
 			(effects
 				(font
@@ -2707,7 +2578,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0225")
+					(reference "#PWR0228")
 					(unit 1)
 				)
 			)
@@ -2722,7 +2593,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "252c880f-2812-4fd7-8c49-a30de3089621")
-		(property "Reference" "#PWR0233"
+		(property "Reference" "#PWR0236"
 			(at 128.27 67.31 0)
 			(effects
 				(font
@@ -2772,7 +2643,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0233")
+					(reference "#PWR0236")
 					(unit 1)
 				)
 			)
@@ -2788,7 +2659,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c8c8026-1426-43db-8c96-6a636ee4fb49")
-		(property "Reference" "R122"
+		(property "Reference" "R110"
 			(at 29.21 45.7199 0)
 			(effects
 				(font
@@ -2851,7 +2722,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "R122")
+					(reference "R110")
 					(unit 1)
 				)
 			)
@@ -2866,7 +2737,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4024a170-a5a6-48bd-8fbf-0cdcd65d2d21")
-		(property "Reference" "U29"
+		(property "Reference" "U32"
 			(at 112.776 82.296 0)
 			(effects
 				(font
@@ -2946,7 +2817,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "U29")
+					(reference "U32")
 					(unit 1)
 				)
 			)
@@ -2961,7 +2832,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "434efcae-6d07-4b12-8c9b-594c477366a0")
-		(property "Reference" "#PWR0232"
+		(property "Reference" "#PWR0235"
 			(at 109.22 81.28 0)
 			(effects
 				(font
@@ -3011,7 +2882,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0232")
+					(reference "#PWR0235")
 					(unit 1)
 				)
 			)
@@ -3026,7 +2897,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "49857065-5acc-46d2-8077-7ac210e215df")
-		(property "Reference" "C141"
+		(property "Reference" "C140"
 			(at 14.224 62.484 0)
 			(effects
 				(font
@@ -3089,75 +2960,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "C141")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UAM_symbols:TestPoint_Small")
-		(at 81.28 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "539eafe2-bcb9-4201-b999-86751dbd96eb")
-		(property "Reference" "TP16"
-			(at 82.55 73.6599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 82.55 76.1999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 86.36 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 81.28 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7e6d213d-beed-47de-8831-8bc9755ac3c2")
-		)
-		(instances
-			(project "OpenAquatix-Hardware"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "TP16")
+					(reference "C140")
 					(unit 1)
 				)
 			)
@@ -3263,7 +3066,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64c1bf1b-1fe7-4b46-9b85-ae2be1a8aad6")
-		(property "Reference" "#PWR0230"
+		(property "Reference" "#PWR0233"
 			(at 104.14 68.58 0)
 			(effects
 				(font
@@ -3313,7 +3116,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0230")
+					(reference "#PWR0233")
 					(unit 1)
 				)
 			)
@@ -3328,7 +3131,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "770790d6-5669-43d8-8cbe-cfb48a8d96f6")
-		(property "Reference" "C142"
+		(property "Reference" "C141"
 			(at 47.752 45.974 0)
 			(effects
 				(font
@@ -3389,7 +3192,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "C142")
+					(reference "C141")
 					(unit 1)
 				)
 			)
@@ -3405,7 +3208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "792b982a-f052-47c8-ba8d-37d837cc7723")
-		(property "Reference" "R124"
+		(property "Reference" "R112"
 			(at 99.06 68.5799 0)
 			(effects
 				(font
@@ -3468,7 +3271,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "R124")
+					(reference "R112")
 					(unit 1)
 				)
 			)
@@ -3484,7 +3287,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80c4720a-ec35-4cd6-9db8-af2e5987c705")
-		(property "Reference" "#PWR0229"
+		(property "Reference" "#PWR0232"
 			(at 95.25 83.82 0)
 			(effects
 				(font
@@ -3534,7 +3337,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0229")
+					(reference "#PWR0232")
 					(unit 1)
 				)
 			)
@@ -3549,7 +3352,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95708ec3-789e-45d3-b072-c2c4f1ca35db")
-		(property "Reference" "C147"
+		(property "Reference" "C146"
 			(at 138.684 55.118 0)
 			(effects
 				(font
@@ -3612,7 +3415,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "C147")
+					(reference "C146")
 					(unit 1)
 				)
 			)
@@ -3627,7 +3430,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a2723f32-b9bf-47c6-8ed0-577224bae53b")
-		(property "Reference" "C146"
+		(property "Reference" "C145"
 			(at 123.19 54.864 0)
 			(effects
 				(font
@@ -3690,7 +3493,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "C146")
+					(reference "C145")
 					(unit 1)
 				)
 			)
@@ -3706,7 +3509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a97b9e0d-c89c-48a8-b051-759fdf721d48")
-		(property "Reference" "#PWR0223"
+		(property "Reference" "#PWR0226"
 			(at 26.67 44.45 0)
 			(effects
 				(font
@@ -3756,7 +3559,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0223")
+					(reference "#PWR0226")
 					(unit 1)
 				)
 			)
@@ -3771,7 +3574,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad007c35-2c81-409c-8ab8-56eb06cd6ad0")
-		(property "Reference" "#PWR0235"
+		(property "Reference" "#PWR0238"
 			(at 134.62 55.88 0)
 			(effects
 				(font
@@ -3821,7 +3624,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0235")
+					(reference "#PWR0238")
 					(unit 1)
 				)
 			)
@@ -3836,7 +3639,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "afd42b59-28fa-4582-a918-1666a56ebf59")
-		(property "Reference" "#PWR0237"
+		(property "Reference" "#PWR0240"
 			(at 138.43 67.31 0)
 			(effects
 				(font
@@ -3886,7 +3689,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0237")
+					(reference "#PWR0240")
 					(unit 1)
 				)
 			)
@@ -3901,7 +3704,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be65bd8b-03cf-455e-a099-f1575aa98c04")
-		(property "Reference" "C145"
+		(property "Reference" "C144"
 			(at 112.014 69.342 0)
 			(effects
 				(font
@@ -3962,7 +3765,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "C145")
+					(reference "C144")
 					(unit 1)
 				)
 			)
@@ -3977,7 +3780,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c21aadac-2acd-42ff-8ace-6bcccb6044bd")
-		(property "Reference" "C143"
+		(property "Reference" "C142"
 			(at 55.626 45.974 0)
 			(effects
 				(font
@@ -4038,7 +3841,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "C143")
+					(reference "C142")
 					(unit 1)
 				)
 			)
@@ -4053,7 +3856,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c353b521-6335-4527-b6e8-6811d6241b7e")
-		(property "Reference" "#PWR0234"
+		(property "Reference" "#PWR0237"
 			(at 132.08 55.88 0)
 			(effects
 				(font
@@ -4103,7 +3906,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0234")
+					(reference "#PWR0237")
 					(unit 1)
 				)
 			)
@@ -4118,7 +3921,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c4b8ba00-999b-4ea6-b06c-115b9822b003")
-		(property "Reference" "U28"
+		(property "Reference" "U31"
 			(at 53.086 60.706 0)
 			(effects
 				(font
@@ -4198,7 +4001,85 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "U28")
+					(reference "U31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UAM_symbols:R_US")
+		(at 162.56 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c593e343-0fd0-4f5a-989c-37f918e9445d")
+		(property "Reference" "R115"
+			(at 164.084 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 164.084 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 163.576 68.834 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 162.56 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C25803"
+			(at 162.56 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb9fd08a-96b1-432e-a0ff-e842bad48c02")
+		)
+		(pin "2"
+			(uuid "7dd14c8f-cdf4-455a-8611-2b9424150f01")
+		)
+		(instances
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
+					(reference "R115")
 					(unit 1)
 				)
 			)
@@ -4214,7 +4095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c611a76d-25c8-449c-b55b-8c25d3f159e7")
-		(property "Reference" "#PWR0226"
+		(property "Reference" "#PWR0229"
 			(at 44.45 72.39 0)
 			(effects
 				(font
@@ -4264,7 +4145,72 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0226")
+					(reference "#PWR0229")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 162.56 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ceb8ee18-481e-4840-9f19-8e0ecc777ebc")
+		(property "Reference" "#PWR0247"
+			(at 162.56 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 164.338 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 162.56 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38c875e8-99b1-4ef8-9d07-3adb57bb3f11")
+		)
+		(instances
+			(project "OpenAquatix-Hardware"
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
+					(reference "#PWR0247")
 					(unit 1)
 				)
 			)
@@ -4279,7 +4225,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3a13d4a-9c7f-4cf6-a3c6-5e7060589161")
-		(property "Reference" "C144"
+		(property "Reference" "C143"
 			(at 89.408 72.39 90)
 			(effects
 				(font
@@ -4340,7 +4286,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "C144")
+					(reference "C143")
 					(unit 1)
 				)
 			)
@@ -4355,7 +4301,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "da2ed750-9519-4495-b3b8-62f3c335c9a0")
-		(property "Reference" "U30"
+		(property "Reference" "U33"
 			(at 137.922 81.28 0)
 			(effects
 				(font
@@ -4449,9 +4395,13 @@
 			(uuid "19dffd53-65fb-4efe-b73c-5bbe7507a801")
 		)
 		(instances
-			(project "OpenAquatix-Hardware"
-				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
+			(project ""
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/67bcbde9-6c97-47b5-a943-9c89dd561e29"
 					(reference "U30")
+					(unit 1)
+				)
+				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
+					(reference "U33")
 					(unit 1)
 				)
 			)
@@ -4467,7 +4417,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df8c960d-e8a5-4182-8480-bf6f14a66f5b")
-		(property "Reference" "R123"
+		(property "Reference" "R111"
 			(at 29.21 63.4999 0)
 			(effects
 				(font
@@ -4530,7 +4480,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "R123")
+					(reference "R111")
 					(unit 1)
 				)
 			)
@@ -4546,7 +4496,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e746efbe-7d73-470d-8e4d-fd7c979a7881")
-		(property "Reference" "#PWR0228"
+		(property "Reference" "#PWR0231"
 			(at 90.17 93.98 0)
 			(effects
 				(font
@@ -4596,7 +4546,7 @@
 		(instances
 			(project "OpenAquatix-Hardware"
 				(path "/af15edda-fefd-41c1-b558-f4be36e6b138/df4113fd-ebb2-41c7-83d5-a1b5c10c6d6b"
-					(reference "#PWR0228")
+					(reference "#PWR0231")
 					(unit 1)
 				)
 			)
